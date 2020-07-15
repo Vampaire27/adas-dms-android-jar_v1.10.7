@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hobot.sample.app.module.signIn.view.SignInPreview
+        android:id="@+id/sign_in_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.hobot.sample.app.module.signIn.view.SigInMaskView
+        android:id="@+id/sign_in_mask_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/company_pic"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="60px"
+        android:layout_marginRight="60px"/>
+
+    <FrameLayout
+        android:id="@+id/sign_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

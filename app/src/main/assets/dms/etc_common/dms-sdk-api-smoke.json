@@ -1,0 +1,9 @@
+{
+  "fn_symbol": "../etc/models/models_smoke_mxnet/dms-smoke-symbol.json",
+  "fn_params": "../etc/models/models_smoke_mxnet/dms-smoke.params",
+  "num": 1,
+  "height": 64,
+  "width": 64,
+  "channel": 1,
+  "model_ver" : "com.hobot.native.hobot-dms.models-tengine:models_smoke_mxnet:2019.11.16"
+}

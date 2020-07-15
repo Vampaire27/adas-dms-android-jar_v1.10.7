@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="输出日志等级:"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/six_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/SmallRadioButton"
+            android:text="6"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/five_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/SmallRadioButton"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/four_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/SmallRadioButton"
+            android:textColor="@color/white"
+            android:text="4"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/three_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/SmallRadioButton"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/two_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/SmallRadioButton"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/one_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            style="@style/SmallRadioButton"
+            android:text="1"
+            android:textSize="20sp"/>
+    </RadioGroup>
+</LinearLayout>

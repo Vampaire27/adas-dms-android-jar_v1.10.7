@@ -1,0 +1,15 @@
+{
+  "calib_frames": 50,
+  "calib_failed_frames": 10,
+  "auto_calib_speed_thld": 30,
+  "face_orient_R_thld": 35,
+  "face_orient_P_thld": 35,
+  "face_orient_Y_thld": 35,
+  "enable_switch": {
+    "autocalib_enable": 0,
+    "auto_calib_rate": 0.001,
+    "face_orient_vec_x": 0.0,
+    "face_orient_vec_y": 0.0,
+    "face_orient_vec_z": 0.0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "gyro_offset" : {
+    "comment" : "zero offset of gyro",
+    "offset_x" : 0.0,
+    "offset_y" : 0.0,
+    "offset_z" : 0.0
+  },
+  "install_direction" : {
+    "comment" : "set the install direction of the device",
+    "Correspondence" : "[x:0, y:1, z:2, -x:3, -y:4, -z:5]",
+    "forward" : 3,
+	"right" : 4
+  },
+  "install_offset" : {
+    "comment" : "install offset between the device and the vehicle",
+	"roll" : 0.0,
+	"pitch" : 0.0,
+	"yaw" : 0.0
+  },
+  "acc_scale" : {
+    "comment" : "the ratio between the accelerometer value and G",
+    "value" : 1.0
+  }
+}

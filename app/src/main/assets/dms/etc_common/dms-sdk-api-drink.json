@@ -1,0 +1,9 @@
+{
+  "fn_symbol": "../etc/models/models_drink_mxnet/dms-drink-symbol.json",
+  "fn_params": "../etc/models/models_drink_mxnet/dms-drink.params",
+  "num": 1,
+  "height": 64,
+  "width": 64,
+  "channel": 1,
+  "model_ver" : "com.hobot.native.hobot-dms.models-tengine:models_drink_mxnet:2019.09.18"
+}

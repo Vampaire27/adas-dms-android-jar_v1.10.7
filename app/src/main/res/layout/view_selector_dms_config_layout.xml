@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/frame"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center|start|bottom"
+        android:text="@string/dms_common_config"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <include layout="@layout/view_selector_dms_scenario_layout" />
+
+    <include layout="@layout/view_selector_dms_calibration_layout" />
+
+    <include layout="@layout/view_selector_dms_render_layout" />
+
+    <include layout="@layout/view_selector_dms_speed_layout" />
+
+</LinearLayout>

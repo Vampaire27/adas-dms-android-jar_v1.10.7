@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="scenario_model_name">
+        <item>run</item>
+        <item>run_render</item>
+        <item>run_render_recorder</item>
+        <item>test</item>
+    </string-array>
+
+    <string-array name="scenario_model_value">
+        <item>scenario_run</item>
+        <item>scenario_run_render</item>
+        <item>scenario_run_render_recorder</item>
+        <item>scenario_test</item>
+    </string-array>
+
+    <!-- prf attr values-->
+    <string-array name="value_ldw_level">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="value_ldw_speed">
+        <item>5.0</item>
+        <item>10.0</item>
+        <item>20.0</item>
+        <item>30.0</item>
+        <item>40.0</item>
+        <item>50.0</item>
+        <item>60.0</item>
+    </string-array>
+    <string-array name="value_hmw">
+        <item>0.6</item>
+        <item>0.7</item>
+        <item>0.8</item>
+        <item>0.9</item>
+        <item>1.0</item>
+        <item>1.2</item>
+    </string-array>
+    <string-array name="value_fcw">
+        <item>2.7</item>
+        <item>2.8</item>
+        <item>2.9</item>
+        <item>3.0</item>
+        <item>3.2</item>
+        <item>3.4</item>
+        <item>3.6</item>
+        <item>3.8</item>
+        <item>4.0</item>
+    </string-array>
+
+    <string-array name="value_dsa_speed">
+        <item>0.0</item>
+        <item>5.0</item>
+        <item>10.0</item>
+        <item>15.0</item>
+        <item>20.0</item>
+        <item>25.0</item>
+        <item>30.0</item>
+        <item>35.0</item>
+        <item>40.0</item>
+    </string-array>
+    <string-array name="value_dca_speed">
+        <item>5.0</item>
+        <item>10.0</item>
+        <item>15.0</item>
+        <item>20.0</item>
+        <item>25.0</item>
+        <item>30.0</item>
+        <item>35.0</item>
+        <item>40.0</item>
+    </string-array>
+    <string-array name="value_ds_acc">
+        <item>2.0</item>
+        <item>2.2</item>
+        <item>2.4</item>
+        <item>2.6</item>
+        <item>2.8</item>
+        <item>3.0</item>
+        <item>3.2</item>
+        <item>3.4</item>
+        <item>3.6</item>
+        <item>3.8</item>
+        <item>4.0</item>
+    </string-array>
+    <string-array name="value_ds_dec">
+        <item>-3.0</item>
+        <item>-3.2</item>
+        <item>-3.4</item>
+        <item>-3.6</item>
+        <item>-3.8</item>
+        <item>-4.0</item>
+        <item>-4.2</item>
+        <item>-4.4</item>
+        <item>-4.6</item>
+        <item>-4.8</item>
+        <item>-5.0</item>
+    </string-array>
+    <string-array name="value_ds_turn">
+        <item>2.0</item>
+        <item>2.2</item>
+        <item>2.4</item>
+        <item>2.6</item>
+        <item>2.8</item>
+        <item>3.0</item>
+        <item>3.2</item>
+        <item>3.4</item>
+        <item>3.6</item>
+        <item>3.8</item>
+        <item>4.0</item>
+    </string-array>
+    <string-array name="value_timer_gap">
+
+    </string-array>
+    <string-array name="value_distance_gap">
+
+    </string-array>
+    <string-array name="value_dms_input_mode">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="value_dms_playback">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <!-- prf attr entries-->
+    <string-array name="ety_ldw_level">
+        <item>low</item>
+        <item>high</item>
+    </string-array>
+    <string-array name="ety_ldw_speed">
+        <item>5.0 km/h</item>
+        <item>10.0 km/h</item>
+        <item>20.0 km/h</item>
+        <item>30.0 km/h</item>
+        <item>40.0 km/h</item>
+        <item>50.0 km/h</item>
+        <item>60.0 km/h</item>
+    </string-array>
+    <string-array name="ety_hmw">
+        <item>0.6</item>
+        <item>0.7</item>
+        <item>0.8</item>
+        <item>0.9</item>
+        <item>1.0</item>
+        <item>1.2</item>
+    </string-array>
+    <string-array name="ety_fcw">
+        <item>2.7</item>
+        <item>2.8</item>
+        <item>2.9</item>
+        <item>3.0</item>
+        <item>3.2</item>
+        <item>3.4</item>
+        <item>3.6</item>
+        <item>3.8</item>
+        <item>4.0</item>
+    </string-array>
+
+    <string-array name="ety_dsa_speed">
+        <item>0.0 km/h</item>
+        <item>5.0 km/h</item>
+        <item>10.0 km/h</item>
+        <item>15.0 km/h</item>
+        <item>20.0 km/h</item>
+        <item>25.0 km/h</item>
+        <item>30.0 km/h</item>
+        <item>35.0 km/h</item>
+        <item>40.0 km/h</item>
+    </string-array>
+    <string-array name="ety_dca_speed">
+        <item>5.0 km/h</item>
+        <item>10.0 km/h</item>
+        <item>15.0 km/h</item>
+        <item>20.0 km/h</item>
+        <item>25.0 km/h</item>
+        <item>30.0 km/h</item>
+        <item>35.0 km/h</item>
+        <item>40.0 km/h</item>
+    </string-array>
+    <string-array name="ety_ds_acc">
+        <item>2.0</item>
+        <item>2.2</item>
+        <item>2.4</item>
+        <item>2.6</item>
+        <item>2.8</item>
+        <item>3.0</item>
+        <item>3.2</item>
+        <item>3.4</item>
+        <item>3.6</item>
+        <item>3.8</item>
+        <item>4.0</item>
+    </string-array>
+    <string-array name="ety_ds_dec">
+        <item>-3.0</item>
+        <item>-3.2</item>
+        <item>-3.4</item>
+        <item>-3.6</item>
+        <item>-3.8</item>
+        <item>-4.0</item>
+        <item>-4.2</item>
+        <item>-4.4</item>
+        <item>-4.6</item>
+        <item>-4.8</item>
+        <item>-5.0</item>
+    </string-array>
+    <string-array name="ety_ds_turn">
+        <item>2.0</item>
+        <item>2.2</item>
+        <item>2.4</item>
+        <item>2.6</item>
+        <item>2.8</item>
+        <item>3.0</item>
+        <item>3.2</item>
+        <item>3.4</item>
+        <item>3.6</item>
+        <item>3.8</item>
+        <item>4.0</item>
+    </string-array>
+    <string-array name="ety_timer_gap">
+
+    </string-array>
+    <string-array name="ety_distance_gap">
+
+    </string-array>
+
+    <string-array name="ety_dms_input_mode">
+        <item>file_in</item>
+        <item>api_all_in</item>
+    </string-array>
+    <string-array name="ety_dms_playback">
+        <item>normal</item>
+        <item>playback</item>
+    </string-array>
+
+    <string-array name="slide_setting_title">
+        <item>通用开关设置</item>
+        <item>SDK通用设置</item>
+        <item>报警音间隔设置</item>
+        <item>报警音开关设置</item>
+        <item>事件触发速度设置</item>
+        <item>事件触发阈值设置</item>
+        <item>事件报警测试</item>
+    </string-array>
+</resources>

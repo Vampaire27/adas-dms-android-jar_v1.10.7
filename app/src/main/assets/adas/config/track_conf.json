@@ -1,0 +1,56 @@
+{
+  "track_settings" : [
+    {
+      "type" : "veh",
+      "min_valid_frames" : 2,
+      "min_valid_conf" : 5,
+      "min_accept_con_without_cnn" : 10,
+      "min_valid_acc_conf" : 60,
+      "max_miss_det" : 2,
+      "use_cam_validate" : 1,
+      "use_lk" : 1,
+      "use_kf" : 1,
+      "bbox_max_width" : 480,
+      "bbox_max_height" : 360
+    },
+    {
+      "type" : "full",
+      "min_valid_frames" : 2,
+      "min_valid_conf" : 10,
+      "min_accept_con_without_cnn" : 20,
+      "min_valid_acc_conf" : 60,
+      "max_miss_det" : 5,
+      "use_cam_validate" : 1,
+      "use_lk" : 1,
+      "use_kf" : 1,
+      "bbox_max_width" : 960,
+      "bbox_max_height" : 720
+    },
+    {
+      "type" : "ped",
+      "min_valid_frames" : 2,
+      "min_valid_conf" : 10,
+      "min_accept_con_without_cnn" : 30,
+      "min_valid_acc_conf" : 50,
+      "max_miss_det" : 3,
+      "use_cam_validate" : 1,
+      "use_lk" : 1,
+      "use_kf" : 1,
+      "bbox_max_width" : 960,
+      "bbox_max_height" : 720
+    },
+    {
+      "type" : "head",
+      "min_valid_frames" : 2,
+      "min_valid_conf" : 3,
+      "min_accept_con_without_cnn" : 10,
+      "min_valid_acc_conf" : 50,
+      "max_miss_det" : 3,
+      "use_cam_validate" : 1,
+      "use_lk" : 1,
+      "use_kf" : 1,
+      "bbox_max_width" : 960,
+      "bbox_max_height" : 720
+    }
+  ]
+}

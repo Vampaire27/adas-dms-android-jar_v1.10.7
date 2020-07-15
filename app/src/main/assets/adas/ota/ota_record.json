@@ -1,0 +1,114 @@
+{
+  "version": "a.5.1_1.5.6",
+  "value_type": {
+    "int": 0,
+    "float": 1,
+    "long": 2,
+    "String": 3,
+    "double": 4
+  },
+  "config_type": {
+    "json_object": 0,
+    "json_array": 1
+  },
+  "example_record_infos": [
+    {
+      "item_type": "HMW_MIN_SPEED",
+      "config_type": 1,
+      "value_type": 0,
+      "reflect_id": "1203"
+    }
+  ],
+  "record_infos": [
+    {
+      "item_type": "CAMERA_ROLL",
+      "config_type": 1,
+      "value_type": 1,
+      "reflect_id": "205"
+    },
+    {
+      "item_type": "CAMERA_PITCH",
+      "config_type": 1,
+      "value_type": 1,
+      "reflect_id": "203"
+    },
+    {
+      "item_type": "CAMERA_YAW",
+      "config_type": 1,
+      "value_type": 1,
+      "reflect_id": "204"
+    },
+    {
+      "item_type": "CAMERA_HEIGHT",
+      "config_type": 1,
+      "value_type": 1,
+      "reflect_id": "201"
+    },
+    {
+      "item_type": "CAMERA_HORIZON",
+      "config_type": 1,
+      "value_type": 1,
+      "reflect_id": "202"
+    },
+    {
+      "item_type": "VEHICLE_WIDTH",
+      "config_type": 1,
+      "value_type": 1,
+      "reflect_id": "206"
+    },
+    {
+      "item_type": "VEHICLE_BACK_AXLE_POS",
+      "config_type": 1,
+      "value_type": 1,
+      "reflect_id": "207"
+    },
+    {
+      "item_type": "VEHICLE_WHEEL_BASE",
+      "config_type": 1,
+      "value_type": 1,
+      "reflect_id": "208"
+    },
+    {
+      "item_type": "CAMERA_X",
+      "config_type": 1,
+      "value_type": 1,
+      "reflect_id": "21D"
+    },
+    {
+      "item_type": "IMU_OFFSET_X",
+      "config_type": 1,
+      "value_type": 1,
+      "reflect_id": "21E"
+    },
+    {
+      "item_type": "IMU_OFFSET_Y",
+      "config_type": 1,
+      "value_type": 1,
+      "reflect_id": "21F"
+    },
+    {
+      "item_type": "IMU_OFFSET_Z",
+      "config_type": 1,
+      "value_type": 1,
+      "reflect_id": "221"
+    },
+    {
+      "item_type": "IMU_ROLL",
+      "config_type": 1,
+      "value_type": 1,
+      "reflect_id": "222"
+    },
+    {
+      "item_type": "IMU_PITCH",
+      "config_type": 1,
+      "value_type": 1,
+      "reflect_id": "223"
+    },
+    {
+      "item_type": "IMU_YAW",
+      "config_type": 1,
+      "value_type": 1,
+      "reflect_id": "224"
+    }
+  ]
+}

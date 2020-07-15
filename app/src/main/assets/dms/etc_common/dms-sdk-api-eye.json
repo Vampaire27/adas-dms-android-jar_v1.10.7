@@ -1,0 +1,20 @@
+{
+  "general" : {
+    "fn_symbol": "../etc/models/models_eyeclsf_mxnet/dms-eye-symbol.json",
+    "fn_params": "../etc/models/models_eyeclsf_mxnet/dms-eye.params",
+    "num": 1,
+    "height": 32,
+    "width": 32,
+    "channel": 1,
+    "model_ver" : "com.hobot.native.hobot-dms.models-tengine:models_eyeclsf_mxnet:2019.10.21"
+  },
+  "close" : {
+    "fn_symbol": "../etc/models/models_eyerefine_mxnet/dms-eye-symbol.json",
+    "fn_params": "../etc/models/models_eyerefine_mxnet/dms-eye.params",
+    "num": 1,
+    "height": 32,
+    "width": 32,
+    "channel": 1,
+    "model_ver" : "com.hobot.native.hobot-dms.models-tengine:models_eyerefine_mxnet:2019.08.13"
+  }
+}

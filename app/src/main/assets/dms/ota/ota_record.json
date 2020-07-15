@@ -1,0 +1,30 @@
+{
+  "version": "a.3.0_v2.6.1",
+  "value_type": {
+    "int": 0,
+    "float": 1,
+    "long": 2,
+    "String": 3,
+    "double": 4
+  },
+  "config_type": {
+    "json_object": 0,
+    "json_array": 1
+  },
+  "example_record_infos": [
+    {
+      "item_type": "DAA_LOWER_SPEED",
+      "config_type": 1,
+      "value_type": 0,
+      "reflect_id": "051"
+    }
+  ],
+  "record_infos": [
+    {
+      "item_type": "CALIBRATION_RESULT",
+      "config_type": 1,
+      "value_type": 0,
+      "reflect_id": "207"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "LcdControl":{
+    "BlinkOnTime" : 200,
+    "BlinkOffTime" : 200,
+    "BackImage":{
+      "X" : "0",
+      "Y" : "0",
+      "ImageWidth" : "160",
+      "ImageHigh" : "128",
+	  "Mode" : "0",
+      "ImageAddress" : "2097152"
+    },
+    "VehicleImage":{
+      "X" : "59",
+      "Y" : "10",
+      "ImageWidth" : "42",
+      "ImageHigh" : "33",
+	  "Mode" : "0",
+      "RedImageAddress" : "2185940",
+      "GreenImageAddress" : "2183168",
+	  "BlackImageAddress" : "2199290"
+    },
+    "PedestrianImage":{
+      "X" : "132",
+      "Y" : "5",
+      "ImageWidth" : "18",
+      "ImageHigh" : "28",
+	  "Mode" : "0",
+      "RedImageAddress" : "2188712",
+	  "BlackImageAddress" : "2202062"
+    },
+    "LeftLineImage":{
+      "X" : "0",
+      "Y" : "0",
+      "ImageWidth" : "44",
+      "ImageHigh" : "128",
+	  "Mode" : "0",
+      "WhiteImageAddress" : "2138112",
+      "YellowImageAddress" : "2160640"
+    },
+    "RightLineImage":{
+      "X" : "116",
+      "Y" : "0",
+      "ImageWidth" : "44",
+      "ImageHigh" : "128",
+	  "Mode" : "0",
+      "WhiteImageAddress" : "2149376",
+      "YellowImageAddress" : "2171904"
+    },
+	"NumImage":{
+      "LeftNumX" : "57",
+      "LeftNumY" : "80",
+	  "RightNumX" : "85",
+      "RightNumY" : "80",
+	  "DotX" : "77",
+      "DotY" : "101",
+	  "NumImageWidth" : "17",
+      "NumImageHigh" : "28",
+	  "DotImageWidth" : "5",
+      "DotImageHigh" : "5",
+	  "._ImageAddress" : "2199240",
+	  "0_ImageAddress" : "2189720",
+	  "1_ImageAddress" : "2190672",
+	  "2_ImageAddress" : "2191624",
+	  "3_ImageAddress" : "2192576",
+	  "4_ImageAddress" : "2193528",
+	  "5_ImageAddress" : "2194480",
+	  "6_ImageAddress" : "2195432",
+	  "7_ImageAddress" : "2196384",
+	  "8_ImageAddress" : "2197336",
+	  "9_ImageAddress" : "2198288",
+	  "NoNumX" : "55",
+      "NoNumY" : "80",
+	  "NoNumImageWidth" : "50",
+      "NoNumImageHigh" : "30",
+	  "NoNum_ImageAddress" : "2203070"
+    }
+  },
+  "LcdProcess":{
+    "KeepTimeClose" : 0,
+    "KeepTimeLight" : 500,
+    "KeepTimeBlink" : 1000
+  },
+  "BeepProcess":{
+    "KeepTimeClose" : 0,
+    "KeepTimeOnce" : 3000,
+    "KeepTimeThrice" : 3000,
+	"KeepTimeAlways" : 2000
+  },
+  "BeepControl":{
+    "BeepOnce":{
+	  "OnTime":300,
+	  "OffTime":100,
+	  "LoopTimes":1
+	},
+	"BeepThrice":{
+	  "OnTime":200,
+	  "OffTime":100,
+	  "LoopTimes":3
+	},
+	"BeepAlways":{
+	  "OnTime":150,
+	  "OffTime":50,
+	  "LoopTimes":8
+	}
+  },
+  "WarningProcess":{
+  }
+}

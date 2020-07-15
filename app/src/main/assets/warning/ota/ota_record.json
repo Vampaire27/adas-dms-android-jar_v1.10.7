@@ -1,0 +1,37 @@
+{
+  "version":"v1.0.0",
+
+  "value_type":{
+    "int":0,
+    "float":1,
+    "long":2,
+    "String":3,
+    "double":4,
+    "boolean":5
+  },
+
+  "config_type":{
+    "json_object":0,
+    "json_array":1
+  },
+  
+  "example_record_infos": [
+    {
+      "item_type":"TYPE_HMW_WARNING_SWITCH",
+      "config_type":1,
+      "value_type":0,
+      "reflect_id":"102"
+    },
+
+    {
+      "item_type":"TYPE_DCA_WARNING_INTERVAL",
+      "config_type":1,
+      "value_type":0,
+      "reflect_id":"402"
+    }
+  ],
+
+  "record_infos":[
+
+  ]
+}

@@ -1,0 +1,62 @@
+android {
+    productFlavors {
+        hobot {
+            buildConfigField "boolean", "PREVIEW_SHOW_SWITCH", "false"
+            buildConfigField "boolean", "RENDER_SHOW_SWITCH", "false"
+            buildConfigField "boolean", "DVR_SHOW_SWITCH", "false"
+            buildConfigField "boolean", "SPEED_RENDER_SWITCH", "false"
+            buildConfigField "boolean", "EXHIBITION_SHOW_SWITCH", "false"
+
+            // ------------- ADAS -------------
+            buildConfigField "boolean", "SUPPORT_ADAS", "true"
+            buildConfigField "int", "DEFAULT_ADAS_CAMERA_TYPE", "0"
+            buildConfigField "int", "DEFAULT_ADAS_CAMERA_ID", "0"
+            // ADAS车辆跟踪
+            buildConfigField "boolean", "SUPPORT_ADAS_VEHICLE_TRACKING", "true"
+            // ADAS车道线跟踪
+            buildConfigField "boolean", "SUPPORT_ADAS_LANE_TRACKING", "true"
+            // 是否有参数标定界面
+            buildConfigField "boolean", "SUPPORT_ADAS_PARAMS_CALIBRATION", "true"
+
+            // ------------- DMS -------------
+            buildConfigField "boolean", "SUPPORT_DMS", "false"
+            buildConfigField "int", "DEFAULT_DMS_CAMERA_TYPE", "0"
+            buildConfigField "int", "DEFAULT_DMS_CAMERA_ID", "1"
+
+            // ------------- FaceId -------------
+            buildConfigField "boolean", "SUPPORT_FACE_ID", "false"
+
+            //------------- 云端face ------------------
+            buildConfigField "boolean", "SUPPORT_FACE_CLOUD", "false"
+
+            // ------------- Net transfer -------------
+            buildConfigField "boolean", "SUPPORT_NET_TRANSFER_SERVER", "true"
+
+            // ------------- 数据上传 -------------
+            buildConfigField "boolean", "SUPPORT_UPLOAD", "false"
+
+            // ------------- 图像质量 -------------
+            buildConfigField "boolean", "SUPPORT_QUALITY", "true"
+
+            // ------------- 语音 -------------
+            buildConfigField "boolean", "SUPPORT_SPEECH", "false"
+
+            // -------------- 签到 -------------
+            buildConfigField "boolean", "SUPPORT_SIGN_IN", "false"
+            buildConfigField "boolean", "SUPPORT_LIVING", "false"
+
+            //-------------数人头---------------
+            buildConfigField "boolean", "SUPPORT_INR", "true"
+            //-------------PaaS服务
+            buildConfigField "boolean", "SUPPORT_PAAS", "true"
+
+            //-------------数人头---------------
+            buildConfigField "boolean", "SUPPORT_INR", "false"
+
+            //-------------方向盘---------------
+            buildConfigField "boolean", "SUPPORT_WHEEL", "false"
+        }
+    }
+}
+dependencies {
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent">
+
+    <com.hobot.sdk.widget.preview.OpenPreview
+        android:id="@+id/preview_dms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.hobot.sample.app.module.dms.DmsMaskerView
+        android:id="@+id/masker_view_dms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.hobot.sample.app.module.dms.DmsCalibrationView
+            android:id="@+id/acv_dms_cali"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+    <com.hobot.sample.app.module.dms.DmsExhibitionView
+            android:id="@+id/exhibition_view_dms"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+    <ImageButton
+            android:id="@+id/dms_calib_iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="#3358D2FC"
+            android:foreground="?attr/selectableItemBackground"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_calibration_dms"
+            tools:ignore="ContentDescription"/>
+
+    <include layout="@layout/view_logo_layout"
+             android:id="@+id/logo_layout"/>
+    <include layout="@layout/view_speed_layout"/>
+    <include layout="@layout/view_distance_layout"/>
+</RelativeLayout>

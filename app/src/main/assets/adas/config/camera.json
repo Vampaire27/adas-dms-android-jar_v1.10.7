@@ -1,0 +1,46 @@
+
+{
+	"camera_x" : 0.0,
+	"camera_y" : -1.340000033378601,
+	"camera_z" : -1.699999976158142,
+	"center_u" : 691.40860248166302,
+	"center_v" : 338.86429743547444,
+	"focal_u" : 1289.5311597834102,
+	"focal_v" : 1290.8773152231033,
+	"image_height" : 720,
+	"image_width" : 1280,
+	"ipm" : 
+	{
+		"bottom" : 1,
+		"height" : 120,
+		"left" : -4,
+		"right" : 4,
+		"top" : 40,
+		"up_pixel" : 10,
+		"width" : 160
+	},
+	"ipm2" : 
+	{
+		"bottom" : 1,
+		"height" : 240,
+		"left" : -8,
+		"right" : 8,
+		"top" : 20,
+		"up_pixel" : 0,
+		"width" : 320
+	},
+	"ipmd" : 
+	{
+		"bottom" : 1,
+		"height" : 264,
+		"left" : -9,
+		"right" : 9,
+		"top" : 90,
+		"up_pixel" : 16,
+		"width" : 352
+	},
+	"calibration_state" : 0,
+	"pitch" : -0.02815636389712166,
+	"roll" : 0,
+	"yaw" : 0.005250786614640397
+}

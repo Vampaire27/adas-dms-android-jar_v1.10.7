@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#ff171A21"
+    android:gravity="center"
+    android:padding="30dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_height"
+        android:layout_width="320dp"
+        android:layout_height="57dp"
+        android:background="@drawable/bg_underline_transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center|start"
+            android:text="@string/calibration_adas_camera_height"
+            android:textColor="@android:color/white"
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="@string/calibration_unit_cm"
+            android:textColor="@color/gray_7"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/et_height"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:drawablePadding="6dp"
+            android:gravity="end|center_vertical"
+            android:imeOptions="actionNext|flagNoExtractUi"
+            android:inputType="numberDecimal|number"
+            android:maxLength="5"
+            android:nextFocusForward="@id/et_horizon"
+            android:paddingEnd="50dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/gray_9"
+            android:textSize="22dp"
+            tools:text="100.0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_horizon"
+        android:layout_width="320dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/rl_height"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_underline_transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center|start"
+            android:text="@string/calibration_adas_camera_horizon"
+            android:textColor="@android:color/white"
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="@string/calibration_unit_cm"
+            android:textColor="@color/gray_7"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/et_horizon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:drawablePadding="6dp"
+            android:gravity="end|center_vertical"
+            android:imeOptions="actionNext|flagNoExtractUi"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:nextFocusForward="@id/et_dis_left"
+            android:paddingEnd="50dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+
+            android:textColorHint="@color/gray_9"
+            android:textSize="22dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_width"
+        android:layout_width="320dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/rl_horizon"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_underline_transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="@string/calibration_unit_cm"
+            android:textColor="@color/gray_7"
+            android:textSize="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center|start"
+            android:text="@string/calibration_adas_vehicle_width"
+            android:textColor="@android:color/white"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/et_width"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:drawablePadding="6dp"
+            android:gravity="end|center_vertical"
+            android:imeOptions="actionNext|flagNoExtractUi"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:nextFocusForward="@id/et_back_axle"
+            android:paddingEnd="50dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+
+            android:textColorHint="@color/gray_9"
+            android:textSize="22dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dis_head"
+        android:layout_width="320dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="48dp"
+        android:layout_toEndOf="@+id/rl_height"
+        android:background="@drawable/bg_underline_transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/calibration_adas_head_distance"
+            android:textColor="@android:color/white"
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="@string/calibration_unit_cm"
+            android:textColor="@color/gray_7"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/et_back_axle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:drawablePadding="6dp"
+            android:gravity="end|center_vertical"
+            android:imeOptions="actionNext|flagNoExtractUi"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:nextFocusForward="@id/et_wheelbase"
+            android:paddingEnd="50dp"
+
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/gray_9"
+            android:textSize="22dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_wheelbase"
+        android:layout_width="320dp"
+        android:layout_height="57dp"
+        android:layout_below="@id/rl_dis_head"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/rl_width"
+        android:background="@drawable/bg_underline_transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/calibration_adas_wheelbase"
+            android:textColor="@android:color/white"
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="@string/calibration_unit_cm"
+            android:textColor="@color/gray_7"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/et_wheelbase"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:drawablePadding="6dp"
+
+            android:gravity="end|center_vertical"
+            android:imeOptions="actionNext|flagNoExtractUi"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:nextFocusForward="@id/et_width"
+
+            android:paddingEnd="50dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/gray_9"
+            android:textSize="22dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dis_left"
+        android:layout_width="320dp"
+        android:layout_height="57dp"
+        android:layout_below="@id/rl_wheelbase"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/rl_width"
+        android:background="@drawable/bg_underline_transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/calibration_adas_camera_left_distance"
+            android:textColor="@android:color/white"
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="@string/calibration_unit_cm"
+            android:textColor="@color/gray_7"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/et_dis_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="-2dp"
+            android:background="@null"
+            android:drawablePadding="6dp"
+            android:gravity="end|center_vertical"
+            android:imeOptions="actionDone|flagNoExtractUi"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:paddingEnd="50dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/gray_9"
+            android:textSize="22dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

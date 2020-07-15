@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="start_sign_in" translatable="false" >开始签到</string>
+    <string name="face_forward" translatable="false">请面向识别区域</string>
+    <string name="blink" translatable="false">请眨眨眼睛</string>
+    <string name="turn_head" translatable="false">请根据箭头指示转动头部</string>
+    <string name="linving_suceess" translatable="false">活体检测成功</string>
+    <string name="living_faild" translatable="false">活体检测失败</string>
+    <string name="sign_success" translatable="false">签到成功</string>
+    <string name="sign_failed" translatable="false">签到失败</string>
+    <string name="non_face" translatable="false">未找到人脸</string>
+    <string name="face_pos" translatable="false">请调整人脸姿态</string>
+    <string name="roi_no_face" translatable="false">人脸信息检测失败，请调整人脸姿态</string>
+    <string name="more_face" translatable="false">检测人脸数量过多</string>
+    <string name="big_face" translatable="false">人脸过大</string>
+    <string name="small_face" translatable="false">人脸过小</string>
+    <string name="move_left" translatable="false">请向左移一点</string>
+    <string name="move_right" translatable="false">请向右移一点</string>
+    <string name="move_top" translatable="false">请向上移一点</string>
+    <string name="move_bottom" translatable="false">请向下移一点</string>
+    <string name="search_success" translatable="false">查询成功</string>
+    
+    <string-array name="sign_in_sound_array">
+        <item>请面向识别区域</item>
+        <item>请眨眨眼睛</item>
+        <item>请根据箭头指示转动头部</item>
+        <item>活体检测成功</item>
+        <item>活体检测失败</item>
+        <item>签到成功</item>
+        <item>签到失败</item>
+        <item>未找到人脸</item>
+        <item>请调整人脸姿态</item>
+    </string-array>
+</resources>

@@ -1,0 +1,123 @@
+{
+  "enable": 1,
+  "RoadInfo": {
+    "default_line_width": 0.15
+  },
+  "LaneRules": {
+    "enable": 1,
+    "min_speed": -1.0,
+    "hysteresis_speed": 2.0,
+    "min_line_length": 10.0,
+    "max_line_curvature": 1.0,
+    "min_line_life_time": 400,
+    "min_lane_width": 2.0,
+    "max_lane_width": 8.0
+  },
+  "InpathRules": {
+    "enable": 1,
+    "use_lane": 1,
+    "use_track": 1,
+    "track_valid_dist_haslane": 30.0,
+    "track_valid_dist_nolane": 80.0,
+    "lane_valid_dist": 60.0,
+    "lane_inpath_vehwidth_percent": 0.5,
+    "default_lane_width": 3.25,
+    "yawrate_percent": 0.5
+  },
+  "HmwRules": {
+    "enable": 1,
+    "min_speed": 30.0,
+    "hysteresis_speed": 2.0,
+    "hmw_level_1": 0.8,
+    "hmw_level_2": 0.1,
+    "hmw_notice_thresh": 2.5,
+    "hmw_hysteresis_value": 0.05,
+    "ignore_overtaked": 0
+  },
+  "FcwRules": {
+    "enable": 1,
+    "min_speed": 30.0,
+    "max_speed": 120.0,
+    "min_rel_speed": 10.8,
+    "max_rel_speed": 75.6,
+    "hysteresis_speed": 2.0,
+    "warn_thresh": 2.7,
+    "a_req_thresh": 3.6,
+    "enable_areq_warn": 0,
+    "enable_acc_stopwarn": 1,
+    "enable_car_type": 0,
+    "car_type_thr": 0.95,
+    "enable_car_distance": 0,
+    "car_distance_thr": 35.0,
+    "enable_car_night": 0,
+    "enable_car_overlap": 0,
+    "enable_consider_hmw":1,
+    "enable_consider_hmw_level2":1,
+    "hmw_value":0.8,
+    "hmw_level2":0.4
+  },
+  "UfcwRules": {
+    "enable": 0,
+    "min_speed": 0.0,
+    "max_speed": 30.0,
+    "hysteresis_speed": 2.0,
+    "warn_thresh": 1.6
+  },
+  "PcwRules": {
+    "enable": 0,
+    "min_speed": 7.0,
+    "max_speed": 50.0,
+    "hysteresis_speed": 2.0,
+    "sensitivity_speed": 20.0,
+    "warn_thresh": 2.0
+  },
+  "LdwRules": {
+    "enable": 1,
+    "min_speed": 60.0,
+    "hysteresis_speed": 2.0,
+    "warning_threshold_dist": -0.15,
+    "lmin_corss_time": 0.2,
+    "turning_signal_keep_time": 1000
+  },
+  "SliRules": {
+    "enable": 0,
+    "min_speed": 5.0,
+    "hysteresis_speed": 2.0,
+    "exceed_speed_radio_thresh": 0.1,
+    "warn_min_speed": 40.0,
+    "speed_limit_keep_t": 10000
+  },
+  "DsRules": {
+    "enable": 1,
+    "sharpacc_acc_thresh": 2.8,
+    "sharpacc_acc_keept": 500,
+    "sharpdec_acc_thresh": 4.0,
+    "sharpdec_acc_keept": 500,
+    "sharpturn_acc_thresh": 3.0,
+    "sharpturn_acc_keept": 500,
+    "collision_acc_thresh": 49.0,
+    "collision_acc_keept": 20,
+    "rollover_angle_thresh": 1.05
+  },
+  "CalculateRules": {
+    "ttc_frames_num": 5,
+    "default_target_vehicle_width": 1.8,
+    "response_time": 1.0
+  },
+  "DebugDelay": {
+    "enable": 1,
+    "in_delay_tresh": 100,
+    "policy_delay_tresh": 100
+  },
+  "MotionStateRules": {
+    "enable": 1,
+    "enable_ignore_fcw": 1,
+    "acc_speeddw_thresh": 1.5,
+    "acc_moving_thresh": 0.5,
+    "gyro_turning_thresh": 0.1
+  },
+  "FvsaRules": {
+    "enable": 1,
+    "dist_thresh": 0.7
+  }
+}

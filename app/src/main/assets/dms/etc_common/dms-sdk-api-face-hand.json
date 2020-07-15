@@ -1,0 +1,56 @@
+{
+  "keep_track_frames" : 3,
+  "fixed_detect_period" : 10,
+  "fixed_detect_region" : 0,
+  "fixed_detect_merge_thres" : 0.5,
+  "force_detect_classid" : 0,
+  "keep_detect_classid" : 0,
+  "keep_detect_frames" : 2,
+  "use_track_filter": 0,
+  "detect" : {
+    "fn_symbol": "../etc/models/models_retinanet_face_hand/dms-retinanet-face-hand-symbol.json",
+    "fn_params": "../etc/models/models_retinanet_face_hand/dms-retinanet-face-hand.params",
+    "num": 1,
+    "height": 224,
+    "width": 224,
+    "channel": 3,
+    "input_stride": 32,
+    "feat_stride": [8, 16, 32, 64, 128],
+    "anchor_ratio": [0.5, 1.0, 2.0],
+    "anchor_scale": [4.0, 5.0396843, 6.349604],
+    "mean": [103.94, 116.78, 123.68],
+    "scale": 0.017,
+    "conf_thres": [0.8, 0.6],
+    "conf_thres_low" : 0.3,
+    "nms_thres": 0.3,
+    "nms_mod":0,
+    "model_ver" : "com.hobot.native.hobot-dms.models-tengine:models_retinanet_face_hand:2020.04.08"
+  },
+  "track" : [
+    {
+      "model_ver" : "com.hobot.native.hobot-dms.models-tengine:models_common_face_track:2020.04.07",
+      "fn_symbol": "../etc/models/models_common_face_track/dms-trackface-symbol.json",
+      "fn_params": "../etc/models/models_common_face_track/dms-trackface.params",
+      "num": 1,
+      "height": 48,
+      "width": 48,
+      "channel": 1,
+      "roi_scale": 1.2,
+      "post_verify_thres" : 0.8,
+      "conf_thres" : 0.7
+    },
+    {
+      "model_ver" : "com.hobot.native.hobot-dms.models-tengine:models_hand_track:2019.07.15",
+      "fn_symbol": "../etc/models/models_hand_track/dms-trackhand-symbol.json",
+      "fn_params": "../etc/models/models_hand_track/dms-trackhand.params",
+      "num": 1,
+      "height": 64,
+      "width": 64,
+      "channel": 1,
+      "roi_scale": 1.2,
+      "post_verify_thres" : 0.6,
+      "conf_thres" : 0.5,
+      "nms_thres" : 0.35
+    }
+  ]
+}

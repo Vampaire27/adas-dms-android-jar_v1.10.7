@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="false"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/sw_adas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:text="@string/slide_action_adas_switch"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:textColor="@android:color/black" />
+
+        <Switch
+            android:id="@+id/sw_dms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:text="@string/slide_action_dms_switch"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:textColor="@android:color/black" />
+
+        <Switch
+            android:id="@+id/sw_exhibition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:text="@string/slide_action_exhibition_switch"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:textColor="@android:color/black" />
+
+        <Switch
+            android:id="@+id/sw_sound_adas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:text="@string/slide_action_adas_sound_switch"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:textColor="@android:color/black" />
+
+        <Switch
+            android:id="@+id/sw_sound_dms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:text="@string/slide_action_dms_sound_switch"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:textColor="@android:color/black" />
+
+        <Switch
+            android:id="@+id/sw_preview_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:text="@string/slide_action_preview_show_switch"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:textColor="@android:color/black" />
+
+        <LinearLayout
+            android:id="@+id/ll_image_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/holo_blue_bright" />
+
+            <Switch
+                android:id="@+id/sw_render_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="50dp"
+                android:text="@string/slide_action_render_show_switch"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                tools:textColor="@android:color/black" />
+
+            <Switch
+                android:id="@+id/sw_dvr_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="50dp"
+                android:text="@string/slide_action_dvr_show_switch"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                tools:textColor="@android:color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/holo_blue_bright" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/sw_speed_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:text="@string/slide_action_speed_render_switch"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:textColor="@android:color/black" />
+
+        <Switch
+            android:id="@+id/sw_performance_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:text="@string/slide_sw_cpu_log"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:textColor="@android:color/black" />
+
+        <Switch
+            android:id="@+id/sw_test_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:text="@string/slide_action_test_mode_switch"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:textColor="@android:color/black" />
+
+        <Switch
+            android:id="@+id/sw_over_standard_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:text="@string/slide_action_over_standard_mode_switch"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:visibility="gone"
+            tools:textColor="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/holo_blue_bright" />
+
+        <Switch
+            android:id="@+id/sw_support_adas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:text="@string/slide_action_support_adas_switch"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:textColor="@android:color/black" />
+
+        <Switch
+            android:id="@+id/sw_support_dms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:text="@string/slide_action_support_dms_switch"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:textColor="@android:color/black" />
+
+        <Switch
+            android:id="@+id/sw_support_face_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:text="@string/slide_action_support_face_id_switch"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:textColor="@android:color/black" />
+
+        <Switch
+            android:id="@+id/sw_support_face_cloud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:text="@string/slide_action_support_face_cloud_switch"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:textColor="@android:color/black" />
+
+        <Switch
+            android:id="@+id/sw_support_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:text="@string/slide_action_support_sign_in_switch"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:textColor="@android:color/black" />
+
+        <Switch
+            android:id="@+id/sw_support_living"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:text="@string/slide_action_support_living_switch"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:textColor="@android:color/black" />
+
+        <Switch
+            android:id="@+id/sw_support_image_quality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:text="@string/slide_action_support_image_quality_switch"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:textColor="@android:color/black" />
+
+        <Switch
+            android:id="@+id/sw_support_speech"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:text="@string/slide_action_support_speech_switch"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:textColor="@android:color/black" />
+
+        <Switch
+            android:id="@+id/sw_support_net_transfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:text="@string/slide_action_support_net_transfer_switch"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:textColor="@android:color/black" />
+
+        <Switch
+            android:id="@+id/sw_support_inr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:text="@string/slide_action_support_inr_switch"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:textColor="@android:color/black" />
+
+        <Switch
+            android:id="@+id/sw_support_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:text="@string/slide_action_support_upload_switch"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:textColor="@android:color/black" />
+
+        <Switch
+            android:id="@+id/sw_support_wheel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:text="@string/slide_action_support_wheel_switch"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:textColor="@android:color/black" />
+        <Switch
+            android:id="@+id/sw_support_paas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:text="@string/slide_action_support_paas_switch"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:textColor="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/holo_blue_bright" />
+
+    </LinearLayout>
+</ScrollView>

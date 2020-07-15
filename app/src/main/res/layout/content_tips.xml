@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_solid_radius"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:gravity="start|top"
+        android:lineSpacingExtra="4sp"
+        android:minHeight="120dp"
+        android:minWidth="220dp"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        tools:text="把汽车停在笔直路面的车道中间位置，调整后视镜和摄像头位置，让天地分界线处于两条⽩色辅助线内，靠近中间绿色虚线。" />
+</RelativeLayout>

@@ -1,0 +1,37 @@
+{
+  "flavor": "core8",
+  "running_mode_comment0": "0 : complete can information, only use can",
+  "running_mode_comment1": "1 : no can information, use imu + gps",
+  "running_mode_comment2": "2 : uncomplete can information, no gps, use imu + can speed",
+  "running_mode_comment3": "3 : gps only",
+  "running_mode_comment4": "4 : detect self car movement",
+  "running_mode": 4,
+  "can_freq": 20,
+  "ins_change": 15,
+  "gps_delay": 800,
+  "recalibration": 0,
+  "gps_time_synchronization": 1,
+  "enable_auto_calib": 1,
+  "stationary_var_window": 200,
+  "stationary_acc_var_thres": 0.05,
+  "stationary_gyro_var_thres": 0.0002,
+  "auto_calib_duration_thres": 1000,
+  "auto_calib_cd": 1000,
+  "auto_calib_update_cd": 10000,
+  "imu_para_path": "./config/",
+  "vehicle_settings": {
+    "back_wheel_pos": 3.56,
+    "camera_z": -1.66
+  },
+  "imu_setting": {
+    "install_posture_comment0": "0 : read imu install posture from this json",
+    "install_posture_comment1": "1 : calculate imu install when the program starts running",
+    "get_install_offset_method": 0,
+    "install_gyro_offset_comment0": "0 : read gyro offset from this json",
+    "install_gyro_offset_comment1": "1 : calculate gyro offset when the program starts running",
+    "get_gyro_offset_method": 0,
+    "install_posture_length": 200,
+    "yaw_rate_kam": 1,
+    "modify_gyro_offset": 7
+  }
+}

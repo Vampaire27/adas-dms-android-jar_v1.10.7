@@ -1,0 +1,12 @@
+{
+  "loop_play" : 1,
+  "network" : {
+    "ip" : "tcp://192.168.1.10:6680"
+  },
+  "video_list" : [
+    {
+      "file_name" : "/sdcard/hobot/adas/data/test.pack",
+      "start_idx" : 0
+    }
+  ]
+}

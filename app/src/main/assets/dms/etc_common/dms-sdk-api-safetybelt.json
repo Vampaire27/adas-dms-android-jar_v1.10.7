@@ -1,0 +1,10 @@
+{
+  "fn_symbol": "../etc/models/models_safetybelt_mxnet/dms-safetybelt-symbol.json",
+  "fn_params": "../etc/models/models_safetybelt_mxnet/dms-safetybelt.params",
+  "num": 1,
+  "height": 64,
+  "width": 64,
+  "channel": 1,
+  "roi_scale" : [3.0, 0.0, 3.0, 5.0],
+  "model_ver" : "com.hobot.native.hobot-dms.models-tengine:models_safetybelt_mxnet:2019.09.19"
+}

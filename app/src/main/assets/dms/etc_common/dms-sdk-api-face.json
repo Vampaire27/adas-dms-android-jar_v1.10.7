@@ -1,0 +1,46 @@
+{
+  "force_track_lost_detect" : 1,
+  "low_freq_work_thres" : 0,
+  "low_freq_detect_period" : 0,
+  "keep_track_frames" : 3,
+  "fixed_detect_period" : 10,
+  "fixed_detect_region" : 0,
+  "fixed_detect_merge_thres" : 0.5,
+  "detect" : {
+    "dynamic_scale_parts" : 2,
+    "dynamic_conf_thres_ratio" : 0.5,
+    "models" : [
+      {
+        "model_fname" : "../etc/models/models_face_alphadet/face_alphadet.bin",
+        "model_ver" : "com.hobot.native.hobot-dms.models:models_face_alphadet:2019.05.21",
+        "conf_thres" : 0.0,
+        "merge_setting" : {
+          "merge_overlap_ratio_thres" : 0.5,
+          "nms_conf_thres" : 8.0,
+          "nms_max_overlap_ratio" : 0.6,
+          "nms_max_contain_ratio" : 0.8
+        }
+      }
+    ],
+    "scan_setting" : {
+      "start_scale" : 0.6,
+      "scale_step" : 0.8,
+      "end_scale" : 0.15,
+      "scan_mode" : "coarse_to_fine",
+      "coarse_to_fine_layer_num" : 8,
+      "pad_border" : 20
+    },
+    "max_img_w" : 2560,
+    "max_img_h" : 1920
+  },
+  "track" : {
+    "model_ver" : "com.hobot.native.hobot-dms.models-tengine:models_face_track:2019.02.26",
+    "fn_symbol": "../etc/models/models_face_track/face-track-symbol.json",
+    "fn_params": "../etc/models/models_face_track/face-track.params",
+    "num": 1,
+    "height": 48,
+    "width": 48,
+    "channel": 1,
+    "conf_thres" : 0.5
+  }
+}

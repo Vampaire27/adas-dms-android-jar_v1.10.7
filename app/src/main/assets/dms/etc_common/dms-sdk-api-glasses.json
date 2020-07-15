@@ -1,0 +1,10 @@
+{
+  "fn_symbol": "../etc/models/models_glasses_mxnet/dms-glasses-symbol.json",
+  "fn_params": "../etc/models/models_glasses_mxnet/dms-glasses.params",
+  "num": 1,
+  "height": 64,
+  "width": 64,
+  "channel": 1,
+  "mean_thres": 60.0,
+  "model_ver" : "com.hobot.native.hobot-dms.models-tengine:models_glasses_mxnet:2019.10.22"
+}

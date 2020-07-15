@@ -1,0 +1,27 @@
+{
+  "RootPath" : ["/storage/sdcard1","/sdcard"],
+  "FreeSize" : 1024,
+  "ADAS" : {
+      "vp_duration_time" : 300000,
+      "vp_storage_path" : "hobot/media/adas/video/",
+      "vp_data_flag" : "ADAS_RAW_Nebula_",
+      "vp_re_str" : "ADAS_RAW_Nebula_\\w*\\d{8}-\\d{6}_\\d{3}",
+      "vp_del_suffix_name" : [".mp4",".proto"],
+      "vp_compress_rate": 50,
+
+      "calibrate_compress_rate": 20,
+
+      "image_storage_path" : "hobot/media/adas/image/",
+      "image_data_flag" : "ADAS_JPEG_Nebula_",
+      "image_free_size" : 20,
+      "image_name_suffix" : "jpg",
+
+      "spare_data_storage_path" : "hobot/media/adas/spare_data/",
+      "spare_data_data_flag" : "ADAS_SPARE_DATA_Nebula_",
+      "spare_data_free_size" : 100,
+
+      "thumbnail_storage_path" : "hobot/media/adas/thumbnail/",
+      "thumbnail_data_flag" : "ADAS_THUMB_Nebula_",
+      "thumbnail_free_size" : 20
+  }
+}

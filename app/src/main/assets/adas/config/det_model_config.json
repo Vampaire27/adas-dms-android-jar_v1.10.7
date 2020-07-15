@@ -1,0 +1,82 @@
+{
+  "enable_roi" : 0,
+  "low_speed_enable_roi" : 1,
+  "low_speed_skip_upscale" : 1,
+  "c2f_threshold" : 8,
+  "model" : [
+    {
+      "type" : "veh",
+      "enable" : 1,
+      "predict_level_enable" : "0x37FFF",
+      "fname" : "/mnt/hobot/adas/model/vehicle.fpga.bin",
+      "real_size" : 4.0,
+      "roi" : [10,10,38,38],
+      "v_ratio" : 0.5,
+      "merge_setting" : {
+        "merge_or_not" : 0,
+        "merge_overlap_ratio_thres" : 0.5,
+        "nms_conf_thres" : 3.0,
+        "nms_max_overlap_ratio" : 0.6,
+        "nms_max_contain_ratio" : 0.9
+      }
+    },
+    {
+      "type" : "full",
+      "enable" : 1,
+      "predict_level_enable" : "0x37FFF",
+      "fname" : "/mnt/hobot/adas/model/vehicle_full.fpga.bin",
+      "roi" : [14,14,52,52],
+      "merge_setting" : {
+        "merge_or_not" : 1,
+        "merge_overlap_ratio_thres" : 0.5,
+        "nms_conf_thres" : 3.0,
+        "nms_max_overlap_ratio" : 0.6,
+        "nms_max_contain_ratio" : 0.9
+      }
+    },
+    {
+      "type" : "ped",
+      "enable" : 1,
+      "predict_level_enable" : "0x17FFF",
+      "fname" : "/mnt/hobot/adas/model/ped.fpga.bin",
+      "real_size" : 1.7,
+      "roi" : [0,7,32,57],
+      "v_ratio" : 1.0,
+      "merge_setting" : {
+        "merge_or_not" : 1,
+        "merge_overlap_ratio_thres" : 0.5,
+        "nms_conf_thres" : 3.0,
+        "nms_max_overlap_ratio" : 0.6,
+        "nms_max_contain_ratio" : 0.9
+      }
+    },
+    {
+      "type" : "head",
+      "enable" : 1,
+      "predict_level_enable" : "0x17FFF",
+      "fname" : "/mnt/hobot/adas/model/head.fpga.bin",
+      "roi" : [0, 0, 40, 150],
+      "reshape" : 1,
+      "merge_setting" : {
+        "merge_or_not" : 1,
+        "merge_overlap_ratio_thres" : 0.6,
+        "nms_conf_thres" : 3.0,
+        "nms_max_overlap_ratio" : 0.6,
+        "nms_max_contain_ratio" : 0.9
+      }
+    },
+    {
+      "type" : "lane",
+      "enable" : 1,
+      "predict_level_enable" : "0x8000",
+      "ipm_times" : 4,
+      "ipm_redundancy" : [0.0, 0.0, 0.0],
+      "ipm_scale_height" : [40, 40, 20],
+      "ipm_scale_width" : [16, 16, 16],
+      "ipm_scale_bottom" : [1, 1, 1],
+      "ipm_width" : [320, 160, 320],
+      "debug_ipm" : 0,
+      "fname" : "/mnt/hobot/adas/model/lane.fpga.bin"
+    }
+  ]
+}

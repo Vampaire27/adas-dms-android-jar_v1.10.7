@@ -1,0 +1,91 @@
+{
+  "HobotADASContext": {
+    "redirect": "",
+    "license_path": "/sdcard/hobot/license",
+    "bitanswer_sn_path": "/sdcard/.bitanswer/sn.txt",
+    "bitanswer_root_path": "/sdcard/.bitanswer/",
+    "bitanswer_feature_id": 2,
+    "auth_method": 10,
+    "device_path": "/dev/i2c-4",
+    "module": "adas",
+    "lock_path": "/sdcard/",
+    "imei": "1111111",
+    "log_settings": {
+      "verbose_level": 0,
+      "info_file": "/sdcard/hobot/adas/log/debug_"
+    },
+    "engine": {
+      "redirect": "engine.json"
+    },
+    "camera": {
+      "redirect1": "camera_buick_bj_20170628.json",
+      "redirect": "camera.json"
+    },
+    "fpga-model": {
+      "redirect": "det_model_config.json"
+    },
+    "track-config": {
+      "redirect": "track_conf.json"
+    },
+    "CAN": {
+      "redirect": "can_sdk_v1.json"
+    },
+    "imu-para": {
+      "redirect": "imu_para.json"
+    },
+    "veh-info": {
+      "redirect": "vehicle_info.json"
+    },
+    "parsing-info": {
+      "redirect": "parsing_info.json"
+    }
+  },
+  "VideoFileInputModule": {
+    "redirect": "videos.json"
+  },
+  "FileToNetworkModule": {
+    "redirect": "videos.json"
+  },
+  "DetectionModule": {
+    "redirect": "detection.json"
+  },
+  "ADASOutputModule": {
+    "redirect": "ADASOutputModule.json"
+  },
+  "VehicleModule": {
+    "skip": 0,
+    "distekf_is_open": 1,
+    "default_width": 1.8,
+    "mLogLevel": 1
+  },
+  "PedestrianModule": {
+    "skip": 0
+  },
+  "LaneModule": {
+    "skip": 0,
+    "Lane": {
+      "use_roadmodel": 1,
+      "only_use_det_contour": 1,
+      "output_raw_lane": 0,
+      "roadmodel": {
+        "partner_predict_level": 1,
+        "max_miss_detection": 10,
+        "enable_raw_assistance": 1
+      }
+    }
+  },
+  "INSModule": {
+    "redirect": "INSModule.json"
+  },
+  "WarningPolicyModule": {
+    "redirect": "WarningPolicyModule.json"
+  },
+  "WarningDisplayModule": {
+    "redirect": "WarningDisplayModule.json"
+  },
+  "PostProcessModule": {
+    "enable_camera_calib": 1,
+    "min_calib_speed": 60,
+    "proto_version": 91206
+  }
+}

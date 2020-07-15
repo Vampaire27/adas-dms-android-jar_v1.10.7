@@ -1,0 +1,188 @@
+<resources>
+
+    <string name="app_name">Horizon Nebula</string>
+    <string name="data_loading">正在加载....</string>
+
+    <string name="car_speed">%1$.1fkm/h</string>
+    <string name="car_distance">%1$.1fm</string>
+    <string name="calculation_speed">计算中....</string>
+
+    <string name="welcome_init_file">初始化文件中,请稍后....</string>
+    <string name="welcome_use_nebula">正在初始化ADAS/DMS,请稍后....</string>
+
+    <string name="adas_start_failed">ADAS启动失败</string>
+    <string name="dms_start_failed">DMS启动失败</string>
+    <string name="sdk_settings">设置</string>
+    <string name="sdk_language">语言</string>
+    <string name="sdk_network">WIFI</string>
+    <string name="sdk_wireless">网络</string>
+    <string name="sdk_sound">声音</string>
+    <string name="sdk_exit">退出</string>
+    <!-- Calibration  Common -->
+    <string name="calibration_cancel">取消</string>
+    <string name="calibration_next">下一步</string>
+    <string name="calibration_prev">上一步</string>
+    <string name="calibration_done">完成</string>
+    <string name="calibration_help">帮助</string>
+    <string name="calibration_close">关闭</string>
+    <string name="calibration_unit_cm">cm</string>
+    <string name="calibration_start">标定开始</string>
+    <string name="calibration_success">标定成功</string>
+
+    <!-- ADAS Calibration -->
+    <string name="calibration_adas_title_camera">Step 1 校正摄像头位置</string>
+    <string name="calibration_adas_title_endpoint">Step 2 校准天地消失点位置</string>
+    <string name="calibration_adas_title_parameters">Step 3 输入车辆参数信息</string>
+    <string name="calibration_adas_tip_camera">把汽车停在笔直路面的车道中间位置，调整后视镜和摄像头位置，让天地分界线处于两条⽩色辅助线内，靠近中间绿色虚线。</string>
+    <string name="calibration_adas_tip_endpoint">移动⻩色⼗字架，使⼗字架的中⼼点 位于天地消失点位置。可以⽤四个方向按键进行微调。</string>
+
+    <string name="calibration_adas_camera_height">摄像头安装高度：</string>
+    <string name="calibration_adas_camera_horizon">摄像头水平距离：</string>
+    <string name="calibration_adas_camera_left_distance">摄像头距车左距离：</string>
+    <string name="calibration_adas_head_distance">后轴到车头距离：</string>
+    <string name="calibration_adas_wheelbase">车辆轴距：</string>
+    <string name="calibration_adas_vehicle_width">车辆宽度：</string>
+    <string name="calibration_adas_tip_parameters">""</string>
+
+    <string name="calibration_error_adas_not_run">"ADAS 未运行!"</string>
+    <string name="calibration_error_device_height">该值应该在(80,400]之间!</string>
+    <string name="calibration_error_camera_width">该值应该在（0,500]!</string>
+    <string name="calibration_error_car_width">该值应该在(0,500]!</string>
+    <string name="calibration_error_left_dis_above_width">该值应该小于【车辆宽度】</string>
+    <string name="calibration_error_back_shaft">该值应该在(0,1000]之间!</string>
+    <string name="calibration_error_wheelbase">该值应该在(0,1000]之间!</string>
+    <string name="calibration_error_back_shaft_above_wheelbase">应该小于【车辆后轴到车头的距离】</string>
+    <string name="calibration_adas_ing">标定中…</string>
+    <string name="calibration_adas_file">"/sdcard/hobot/media/adas/image/ADAS_JPEG_Nebula_CALIB_%s.jpeg"</string>
+    <string name="calibration_adas_file_timestamp">"yyyyMMdd-HHmmss_SSS"</string>
+
+    <!-- DMS Calibration -->
+    <string name="calibration_dms_title_1">Step 1 校正摄像头位置</string>
+    <string name="calibration_dms_title_2">Step 2 开始标定</string>
+    <string name="calibration_dms_adjust_camera">调整摄像头位置，粘牢在中控台，使其位于您座位正前方右侧30度范围内，完成后请点击下一步。</string>
+    <string name="calibration_dms_watch_front">请您正视前方，保持位置不动，并确保人脸位于当前界面中心内</string>
+    <string name="calibration_dms_again">标定失败，请重新开始标定</string>
+    <string name="calibration_dms_delay" translatable="false">长时间无回复，重新标定!</string>
+    <string name="calibration_dms_failed_noface">标定失败，请将人脸置于蓝框中心</string>
+    <string name="calibration_dms_failed_abnormalface">标定失败，摄像头角度偏大</string>
+    <string name="calibration_error_dms_not_run">"DMS 未运行!"</string>
+
+    <!-- DEBUG PAGE -->
+    <string name="slide_action_interval_0s" translatable="false">0s</string>
+    <string name="slide_action_interval_1s" translatable="false">1s</string>
+    <string name="slide_action_interval_2s" translatable="false">2s</string>
+    <string name="slide_action_interval_3s" translatable="false">3s</string>
+    <string name="slide_action_interval_4s" translatable="false">4s</string>
+    <string name="slide_action_interval_5s" translatable="false">5s</string>
+    <string name="slide_action_interval_6s" translatable="false">6s</string>
+    <string name="slide_action_interval_7s" translatable="false">7s</string>
+    <string name="slide_action_interval_8s" translatable="false">8s</string>
+    <string name="slide_action_interval_9s" translatable="false">9s</string>
+    <string name="slide_action_speed">设置速度</string>
+    <string name="slide_action_gps_only">GPS</string>
+    <string name="slide_action_imu_gps">GPS + IMU</string>
+    <string name="slide_action_fake_speed">假速度</string>
+    <string name="slide_action_self_detect">自检查模式</string>>
+    <string name="slide_action_feed_gps">喂GPS</string>
+    <string name="slide_action_total_interval">报警时间间隔：</string>
+    <string name="slide_action_dms_speed_limit">DMS 速度限制开关</string>
+    <string name="slide_action_wheel_speed_limit">WHEEL 速度限制开关</string>
+    <string name="slide_action_no_condition_off">无条件关闭</string>
+    <string name="slide_action_no_condition_on">无条件开启</string>
+    <string name="slide_action_have_condition_on_off">有条件开闭</string>
+    <string name="page_item">第%1$d页</string>
+    <string name="event_interval" translatable="false">%1$s interval /s</string>
+    <string name="event_warn" translatable="false">%1$s 报警/上传测试</string>
+    <string name="sound_switch">%1$s: %2$s</string>
+    <string name="fake_speed">fake speed: %1$d</string>
+    <string name="restart_adas_dms">(需重新启动ADAS/DMS才能生效)</string>
+    <string name="adas_common_config">ADAS 通用配置 (需重新启动ADAS才能生效)</string>
+    <string name="adas_scenario_mode">ADAS 运行模式</string>
+    <string name="adas_speed_mode">ADAS 速度模式</string>
+    <string name="adas_tracking_func">ADAS 跟踪功能</string>
+    <string name="dms_common_config">DMS 通用配置 (需重新启动DMS才能生效)</string>
+    <string name="dms_scenario_mode">DMS 运行模式</string>
+    <string name="wheel_common_config">WHEEL 通用配置 (需重新启动WHEEL才能生效)</string>
+    <string name="slide_action_adas_switch">ADAS 开关</string>
+    <string name="slide_action_dms_switch">DMS 开关</string>
+    <string name="slide_action_exhibition_switch">展会模式 开关</string>
+    <string name="slide_action_test_mode_switch">测试模式 开关</string>
+    <string name="slide_action_over_standard_mode_switch">过标模式 开关</string>
+    <string name="slide_action_adas_sound_switch">ADAS 声音报警开关</string>
+    <string name="slide_action_dms_sound_switch">DMS 声音报警开关</string>
+    <string name="slide_action_preview_show_switch">预览显示开关</string>
+    <string name="slide_action_render_show_switch">绘制显示开关</string>
+    <string name="slide_action_dvr_show_switch">DVR 显示开关</string>
+    <string name="slide_action_adas_tracking_vehicles_switch">ADAS 车辆跟踪开关</string>
+    <string name="slide_action_adas_tracking_lanes_switch">ADAS 车道线跟踪开关</string>
+    <string name="slide_action_dms_native_render_switch">DMS 底层绘制显示开关</string>
+    <string name="slide_action_dms_auto_calibration_switch">DMS 自动标定开关</string>
+    <string name="slide_action_speed_render_switch">车距/速度显示开关</string>
+    <string name="slide_action_camera_switch">%s 开关</string>
+    <string name="unknow_page" translatable="false">未命名界面</string>
+    <string name="warning_event" translatable="false">报警</string>
+    <string name="update_event" translatable="false">上传</string>
+
+    <string name="slide_action_support_adas_switch">ADAS 支持开关</string>
+    <string name="slide_action_support_dms_switch">DMS 支持开关</string>
+    <string name="slide_action_support_face_id_switch">本地人脸识别 支持开关</string>
+    <string name="slide_action_support_face_cloud_switch">云端人脸识别 支持开关</string>
+    <string name="slide_action_support_sign_in_switch">签到 支持开关</string>
+    <string name="slide_action_support_living_switch">活体 支持开关</string>
+    <string name="slide_action_support_image_quality_switch">图像质量 支持开关</string>
+    <string name="slide_action_support_speech_switch">语音 支持开关</string>
+    <string name="slide_action_support_net_transfer_switch">网络传输 支持开关</string>
+    <string name="slide_action_support_inr_switch">人数识别 支持开关</string>
+    <string name="slide_action_support_upload_switch">数据上传 支持开关</string>
+    <string name="slide_action_support_wheel_switch">脱离方向盘 支持开关</string>
+    <string name="slide_action_support_paas_switch">PaaS 支持开关</string>
+    <string name="adas_run_mode_file">ADAS 文件输入</string>
+    <string name="adas_feed_pack_path">Pack路径：</string>
+    <string name="adas_feed_default_path" translatable="false">****************</string>
+    <string name="toast_adas_file_int_path_invalid">ADAS的PACK路径不合法</string>
+    <string name="dms_run_mode_api">DMS API 输入</string>
+    <string name="dms_run_mode_file">DMS 文件输入</string>
+    <string name="dms_recorder_switch">录制开关</string>
+    <string name="adas_run_mode_render">运行模式</string>
+    <string name="adas_run_mode_recorder">录制模式</string>
+    <string name="adas_run_mode_test">测试模式</string>
+    <string name="dms_feed_video_path">视频路径：</string>
+    <string name="dms_feed_default_path" translatable="false">****************</string>
+    <string name="slide_sw_cpu_log">性能显示开关</string>
+    <string name="dms_feed_meta_path">数据路径：</string>
+    <string name="dms_run_mode">运行模式：</string>
+    <string name="dms_run_mode_normal">回看模式</string>
+    <string name="dms_run_mode_playback">回灌模式</string>
+    <string name="toast_dms_file_int_path_invalid">DMS的视频或数据路径不合法</string>
+    <string name="toast_input_mode_illegal">当前输入模式不能录屏</string>
+    <string name="dms_exhibition_title" translatable="false">Driver Monitoring System</string>
+    <string name="dms_exhibition_eye_status" translatable="false">EYE STATUS</string>
+    <string name="dms_exhibition_left" translatable="false">Left:</string>
+    <string name="dms_exhibition_right" translatable="false">Right:</string>
+    <string name="dms_exhibition_eye_status_values" translatable="false">Close</string>
+    <string name="dms_exhibition_face_orientation" translatable="false">FACE ORIENTATION</string>
+    <string name="dms_exhibition_face_orientation_values" translatable="false">Front</string>
+    <string name="dms_exhibition_head_position" translatable="false">HEAD POSITION</string>
+    <string name="dms_exhibition_head_position_values" translatable="false">X:%3d  Y:%3d  Z:%3d (cm)</string>
+    <string name="dms_exhibition_head_rotation" translatable="false">HEAD ROTATION</string>
+    <string name="dms_exhibition_head_rotation_values" translatable="false">R:%3d  P:%3d  Y:%3d (deg)</string>
+    <string name="dms_exhibition_driver_status" translatable="false">DRIVER STATUS</string>
+    <string name="dms_exhibition_fatigue" translatable="false">Fatigue</string>
+    <string name="dms_exhibition_calling" translatable="false">Calling</string>
+    <string name="dms_exhibition_smoking" translatable="false">Smoking</string>
+    <string name="dms_exhibition_yawning" translatable="false">Yawning</string>
+    <string name="dms_exhibition_distraction" translatable="false">Distraction</string>
+    <string name="dms_exhibition_abnormal" translatable="false">Abnormal</string>
+    <string name="sound_interval_default" translatable="false">default</string>
+    <string name="threshold_value_description" translatable="false">%s(MinValue:%d MaxValue:%d)</string>
+
+    <string name="toast_input_all_params">请输入所有参数!</string>
+    <string name="toast_input_correct_params">请输入正确参数!</string>
+    <string name="toast_press_again_exit_program">再按一次后退键退出程序</string>
+    <string name="adas_recoder_type_select">Adas录制模式选择(重启Adas后生效)</string>
+    <string name="adas_shuffle_select">Adas Shuffle模式选择(重启Adas后生效)</string>
+    <string name="recorder_frame">录制frame格式(0)</string>
+    <string name="recorder_sdk">录制sdk格式(1)</string>
+
+    <string name="info_version_name">"version : %1$1s"</string>
+</resources>

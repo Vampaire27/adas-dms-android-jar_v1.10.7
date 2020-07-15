@@ -1,0 +1,68 @@
+{
+  "DFW": {
+    "warn_border_speed": 60,
+    "warn_speed_hysteresis": 10,
+    "warn_low_speed_ms_thld": 1500,
+    "warn_high_speed_ms_thld": 1500,
+    "warn_normal_state_tolerance_tms": 200,
+    "warn_time_alarm_interval": 3000,
+    "dfw_low_vote_thld": 0.8,
+    "dfw_high_vote_thld": 0.8,
+    "dfw_recall_time_window": 4500,
+    "dfw_ldmks_stdev_thld": 10.0,
+    "dfw_stdev_thld": 0.5
+  },
+  "DDW": {
+    "warn_face_back_to_front_ms_thld": 500,
+    "warn_normal_state_tolerance_tms": 200,
+    "warn_time_alarm_interval": 3000,
+    "LEFT": {
+      "warn_speed_border": 60,
+      "warn_speed_border_ms_thld1": 2500,
+      "warn_speed_border_ms_thld2": 2000
+    },
+    "RIGHT": {
+      "warn_speed_border": 60,
+      "warn_speed_border_ms_thld1": 2500,
+      "warn_speed_border_ms_thld2": 2000
+    },
+    "UP": {
+      "warn_speed_border": 60,
+      "warn_speed_border_ms_thld1": 2500,
+      "warn_speed_border_ms_thld2": 2000
+    },
+    "DOWN": {
+      "warn_speed_border": 60,
+      "warn_speed_border_ms_thld1": 2500,
+      "warn_speed_border_ms_thld2": 2000
+    }
+  },
+  "DYA": {
+    "warn_time_alarm_interval": 3000
+  },
+  "DSA": {
+    "warn_alarm_method": 1,
+    "warn_time_alarm_tolerance": 1000,
+    "warn_time_alarm_interval": 3000
+  },
+  "DCA": {
+    "warn_alarm_method": 1,
+    "warn_time_alarm_tolerance": 1000,
+    "warn_time_alarm_interval": 3000
+  },
+  "DAA": {
+    "warn_time_alarm_interval": 8000,
+    "face_brightness_thre": 0.7,
+    "face_entropy_thre": 3.5
+  },
+  "DEBA": {
+    "warn_time_thld": 3000,
+    "warn_time_alarm_interval": 3000
+  },
+  "DDRA": {
+    "warn_time_alarm_interval": 3000
+  },
+  "DSBA": {
+    "warn_time_alarm_interval": 3000
+  }
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dp"
+              android:background="@drawable/frame"
+              android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/warning_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/bg_blue"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:text="@string/event_interval"
+            android:gravity="center|start"/>
+
+    <RadioGroup
+            android:id="@+id/sound_interval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+        <RadioButton
+                android:id="@+id/interval_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                style="@style/SmallRadioButton"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:text="@string/sound_interval_default"
+                android:textColor="@android:color/white"/>
+
+        <RadioButton
+                android:id="@+id/interval_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                style="@style/SmallRadioButton"
+                android:textColor="@android:color/white"
+                android:text="@string/slide_action_interval_0s"/>
+
+        <RadioButton
+                android:id="@+id/interval_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                style="@style/SmallRadioButton"
+                android:textColor="@android:color/white"
+                android:text="@string/slide_action_interval_2s"/>
+
+        <RadioButton
+                android:id="@+id/interval_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                style="@style/SmallRadioButton"
+                android:textColor="@android:color/white"
+                android:text="@string/slide_action_interval_4s"/>
+
+        <RadioButton
+                android:id="@+id/interval_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                style="@style/SmallRadioButton"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:text="@string/slide_action_interval_6s"/>
+    </RadioGroup>
+</LinearLayout>

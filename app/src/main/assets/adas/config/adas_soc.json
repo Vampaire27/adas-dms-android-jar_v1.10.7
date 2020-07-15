@@ -1,0 +1,156 @@
+{
+  "flavor": "core8",
+  "ADAS_Version": {
+    "hobot-adas-framework": "nebula_v2,bdc7231",
+    "hobot-adas-ins": "nebula_v2,d4eb4a3",
+    "hobot-adas-library": "nebula_v2_secure,67169ae",
+    "hobot-adas-detection": "nebula_v2,a792b75",
+    "hobot-adas-warning-policy": "nebula_v2,11737d7"
+  },
+  "Engine": {
+    "global_json": "global.json"
+  },
+  "engine_settings": {
+    "redirect": "engine.json"
+  },
+  "camera_settings": {
+    "redirect": "camera.json"
+  },
+  "storage": {
+    "redirect": "StorageManager.json"
+  },
+  "vehicle_settings": {
+    "redirect": "vehicle_info.json"
+  },
+  "policy_settings": {
+    "redirect": "WarningPolicyModule.json"
+  },
+  "imu_settings": {
+    "redirect": "imu_para.json"
+  },
+  "global_settings": {
+    "redirect": "global.json"
+  },
+  "debug_level": {
+    "AdasLogLevel": "2",
+    "AdasAlgoModule": "0",
+    "AdasOutputRender": "0",
+    "CameraModule": "0",
+    "IMUModule": "0",
+    "LocationModule": "0",
+    "RecorderModule": "0",
+    "FakeInputModule": "0",
+    "EventModule": "0"
+  },
+  "scenario_setting": {
+    "scenario_name": "scenario_run_render",
+    "scenario_list": "scenario_run_render,scenario_run_render_recorder,scenario_test"
+  },
+  "scenario_run_render": {
+    "output_render": "1",
+    "recorder": "0",
+    "adas_algo": "1",
+    "location": "1",
+    "imu": "0",
+    "camera": "1",
+    "input_simu": "0",
+    "adas_event": "1"
+  },
+  "scenario_run_render_recorder": {
+    "output_render": "1",
+    "recorder": "1",
+    "adas_algo": "1",
+    "location": "1",
+    "imu": "0",
+    "camera": "1",
+    "input_simu": "0",
+    "adas_event": "1"
+  },
+  "scenario_test": {
+    "output_render": "1",
+    "recorder": "0",
+    "adas_algo": "1",
+    "location": "0",
+    "imu": "0",
+    "camera": "0",
+    "input_simu": "1",
+    "adas_event": "1"
+  },
+  "AdasAlgoModule": {
+    "frame_interval": 52
+  },
+  "RenderModule": {
+    "comment": "render module to render image",
+    "comment_render": "native opencv render",
+    "comment_color": "default for gray,disable for colorful",
+    "enable_render": 0,
+    "enable_color": 0,
+    "comment_offset": "render module to set the distance offset.",
+    "distance_offset": 1.0
+  },
+  "RecorderModule": {
+    "comment": "Recorder module set recorder config.",
+    "type": "0",
+    "type_pack": "0",
+    "type_mp4": "1",
+    "type_network": "2",
+    "endport": "55560"
+  },
+  "IMUModule": {
+    "comment": "IMU module set sensor config.",
+    "min_acc_delay": 100,
+    "min_gyro_delay": 100,
+    "acc_coordinate_map": {
+      "comment": "Mapping from device acc coordinate to INS coordinate",
+      "coordinate_map": "[x:0, y:1, z:2, -x:3, -y:4, -z:5]",
+      "ins_x": 4,
+      "ins_y": 0,
+      "ins_z": 2
+    },
+    "gyro_coordinate_map": {
+      "comment": "Mapping from device gyro coordinate to INS coordinate",
+      "coordinate_map": "[x:0, y:1, z:2, -x:3, -y:4, -z:5]",
+      "ins_x": 4,
+      "ins_y": 3,
+      "ins_z": 5
+    }
+  },
+  "FakeInputModule": {
+    "common_proto_type": "proto_type support 'frame' and 'sdk'. never mind, we can auto fix it.",
+    "proto_type": "frame",
+    "comment_src_type": "src_type support '0' and '1'. '0' is pack model, '1' is  mp4 model. '1' is not support now.",
+    "src_type": "0",
+    "comment_decode_type": "decode_type support '0' and '1'. '0' is single thread mode, '1' is  multi thread model.",
+    "decode_type": "1",
+    "fpga_pack_name": "test.pack",
+    "soc_data_name": "test.data"
+  },
+  "EventModule": {
+    "HMW": {
+      "enable": 1
+    },
+    "FCW": {
+      "enable": 1
+    },
+    "LDW": {
+      "enable": 1
+    },
+    "PCW": {
+      "enable": 1
+    },
+    "FVSA": {
+      "enable": 1
+    }
+  },
+  "core_bindings": {
+    "max_cores": "4",
+    "cpu0": "0",
+    "cpu1": "0",
+    "cpu2": "0",
+    "cpu3": "0",
+    "cpu4": "0",
+    "cpu5": "0",
+    "cpu6": "0",
+    "cpu7": "0"
+  }
+}

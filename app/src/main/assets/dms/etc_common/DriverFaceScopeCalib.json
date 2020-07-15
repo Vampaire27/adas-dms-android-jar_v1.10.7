@@ -1,0 +1,10 @@
+{
+    "calib_frames" : 100,
+    "finetune_frames" : 150,
+    "width_scale": 1.0,
+    "height_scale": 1.0,
+    "face_iou_thld": 0.0,
+    "scope_iou_thld": 0.3,
+    "scope_stay_thld": 10,
+    "scope_confidence_thld": 10000
+}

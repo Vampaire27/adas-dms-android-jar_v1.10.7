@@ -1,0 +1,27 @@
+{
+  "channels" : 15,
+  "freespace_channels" : [0, 3],
+  "allowed channel_labels" : [
+    "Road", "Sidewalk", "Building", "LaneMarking",  
+    "Fence", "Pole", "TrafficLight", "TrafficSign",
+    "Vegetation", "Terrain", "Sky", "Person", "Rider",
+    "Car", "Truck", "Bus", "Train", "Motorcycle", "Bicycle"    
+    ],
+  "channel_labels" : [
+    { "labels" : ["Road"] },
+    { "labels" : ["Sidewalk"] },
+    { "labels" : ["Building"] },
+    { "labels" : ["LaneMarking"] },
+    { "labels" : ["Fence"] },
+    { "labels" : ["Pole"] },
+    { "labels" : ["TrafficLight"] },
+    { "labels" : ["TrafficSign"] },
+    { "labels" : ["Vegetation"] },
+    { "labels" : ["Terrain"] },
+    { "labels" : ["Sky"] },
+    { "labels" : ["Person"] },
+    { "labels" : ["Rider"] },
+    { "labels" : ["Car"] },
+    { "labels" : ["Truck"] }
+  ]
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="slide_setting_title">
+        <item>Common switch settings</item>
+        <item>SDK common settings</item>
+        <item>Warning interval settings</item>
+        <item>Warning switch settings</item>
+        <item>Event trigger time settings</item>
+        <item>Event trigger value settings</item>
+        <item>Event warning test</item>
+    </string-array>
+</resources>

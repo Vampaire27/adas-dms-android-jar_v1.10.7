@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/car_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@color/bg_performance"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/speed"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/calculation_speed"
+        android:textColor="@color/text_color_performance"
+        android:textSize="8sp"
+        android:visibility="gone" />
+</LinearLayout>

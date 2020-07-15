@@ -1,0 +1,14 @@
+{
+    "check_cnt" : 30,
+    "skip_cnt" : 30,
+    "check_interval" : 5,
+    "start_interval" : 10,
+    "roi_x" : 5000,
+    "roi_y" : 5000,
+    "roi_width" : 10000,
+    "roi_height" : 10000,
+    "blur_thresh" : 90,
+    "shelter_thresh" : 90,
+    "freeze_thresh" : 90,
+    "count_thresh" : 25
+}

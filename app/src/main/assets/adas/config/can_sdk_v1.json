@@ -1,0 +1,123 @@
+{
+  "vehicle": "sdk",
+  "verbose": 0,
+  "turn_signal_interval": 300,
+  "dbc": [
+      {
+      "id": "0x685",
+      "endian": "Intel",
+      "dlc": 8,
+      "cycle": 100,
+      "data": [
+        {
+          "name": "speed",
+          "value_type": "Unsigned",
+          "start_bit": 0,
+          "bit_length": 13,
+          "scale": 0.0625,
+          "offset": 0.0,
+          "range": {
+            "min": 0.0,
+            "max": 511.9375
+          },
+          "parser_flag": 1,
+          "timeout_time": 1000,
+          "comments": "unit is km/h"
+        }
+      ]
+    },
+    {
+      "id": "0x686",
+      "endian": "Intel",
+      "dlc": 3,
+      "cycle": 1000,
+      "data": [
+        {
+          "name": "hazard_light",
+          "value_type": "Enum",
+          "start_bit": 0,
+          "bit_length": 1,
+          "scale": 1.0,
+          "offset": 0.0,
+          "range": {
+            "min": 0.0,
+            "max": 1.0
+          },
+           "value_table": [
+            { "value" : "0x0", "desp" : "OFF" },
+            { "value" : "0x1", "desp" : "ON" }
+          ],
+          "parser_flag": 1,
+          "timeout_time": 2000,
+          "comments": "0x0,false;0x1 true"
+        },
+        {
+          "name": "turn_signal",
+          "value_type": "Enum",
+          "start_bit": 1,
+          "bit_length": 2,
+          "scale": 1.0,          
+          "offset": 0.0,
+          "range": {
+            "min": 0.0,
+            "max": 2.0
+          },
+	  "value_table": [
+            { "value" : "0x0", "desp" : "None" },
+            { "value" : "0x1", "desp" : "Left" },
+            { "value" : "0x2", "desp" : "Right" }
+          ],
+          "parser_flag": 1,
+          "timeout_time": 2000,
+          "comments": "0x0,None;0x1,Left;0x2,Right;"
+        }
+      ]
+    },
+	{
+      "id": "0x687",
+      "endian": "Intel",
+      "dlc": 8,
+      "cycle": 10,
+      "data": [
+        {
+          "name": "wheel_angle",
+          "value_type": "Signed",
+          "start_bit": 0,
+          "bit_length": 15,
+          "scale": 0.0625,
+          "offset": 0.0,
+          "range": {
+            "min": -1024,
+            "max": 1023.9375
+          },
+          "parser_flag": 1,
+          "timeout_time": 1000,
+          "comments": "steering wheel angle，unit is degree, negative value means left side"
+        }
+      ]
+    },
+    {
+      "id": "0x688",
+      "endian": "Intel",
+      "dlc": 8,
+      "cycle": 20,
+      "data": [
+        {
+          "name": "yaw_rate",
+          "value_type": "Signed",
+          "start_bit": 0,
+          "bit_length": 13,
+          "scale": 0.0009765625,          
+          "offset": 0.0,
+          "range": {
+            "min": -4,
+            "max": 3.9990234375
+          },
+          "parser_flag": 1,
+          "timeout_time": 1000,
+          "comments": "unit is to rad/s,Negative value means left side"
+        }
+      ]
+    }    
+  ]
+}

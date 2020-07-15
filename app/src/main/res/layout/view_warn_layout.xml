@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hobot.sample.app.view.WarnView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/warn_view"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:background="@android:color/holo_blue_dark"
+        android:alpha="0.5"
+        android:visibility="gone"
+        android:layout_gravity="center|end"/>

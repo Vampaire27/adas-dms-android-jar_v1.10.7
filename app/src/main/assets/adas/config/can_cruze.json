@@ -1,0 +1,42 @@
+{
+  "vehicle" : "Cruze",
+  "verbose" : 0,
+  "dbc" : [
+    {
+      "id" : "0x3E9",
+      "endian" : "Motorola",
+      "data" : [
+        {
+          "name" : "speed",
+          "value_type" : "Unsigned",
+          "start_bit" : 38,
+          "bit_length" : 15,
+          "scale" : 0.0156875,
+          "offset" : 0.0,
+          "range" : {
+            "min" : 0.0,
+            "max" : 511.984375
+          }
+        }
+      ]
+    },
+    {
+      "id" : "0x1E9",
+      "endian" : "Motorola",
+      "data" : [
+        {
+          "name" : "yaw_rate",
+          "value_type" : "Signed",
+          "start_bit" : 35,
+          "bit_length" : 12,
+          "scale" : -0.00109083088,
+          "offset" : 0,
+          "range" : {
+            "min" : -128.0,
+            "max" : 127.9375
+          }
+        }    
+      ]
+    }
+  ]
+}

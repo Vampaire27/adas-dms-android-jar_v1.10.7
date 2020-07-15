@@ -1,0 +1,126 @@
+{
+  "vehicle" : "BYD",
+  "verbose" : 0,
+  "dbc" : [
+    {
+      "id" : "0x34C",
+      "endian" : "Intel",
+      "data" : [
+        {
+          "name" : "wheel_angle",
+          "value_type" : "Unsigned",
+          "start_bit" : 8,
+          "bit_length" : 16,
+          "scale" : 0.1,
+          "offset" : -780.0,
+          "range" : {
+            "min" : -780.0,
+            "max" : 779.9
+          }        
+        }
+      ]
+    },
+    {
+      "id" : "0x35C",
+      "endian" : "Intel",
+      "data" : [
+        {
+          "name" : "gear",
+          "value_type" : "Enum",
+          "start_bit" : 8,
+          "bit_length" : 3,
+          "scale" : 1.0,
+          "offset" : 0.0,
+          "range" : {
+            "min" : 0,
+            "max" : 4
+          },
+          "value_table": [
+            { "value" : "0x0", "desp" : "none" },
+            { "value" : "0x1", "desp" : "P" },
+            { "value" : "0x2", "desp" : "N" },
+            { "value" : "0x3", "desp" : "R" },
+            { "value" : "0x4", "desp" : "D" }
+          ]
+        }
+      ]
+    },
+    {
+      "id" : "0x121",
+      "endian" : "Intel",
+      "data" : [
+        {
+          "name" : "speed",
+          "value_type" : "Unsigned",
+          "start_bit" : 0,
+          "bit_length" : 12,
+          "scale" : 0.06875,
+          "offset" : 0.0,
+          "range" : {
+            "min" : 0.0,
+            "max" : 281.4625
+          }
+        }
+      ]
+    },
+    {
+      "id" : "0x133",
+      "endian" : 0,
+      "data" : [
+        {
+          "name" : "turn_signal",
+          "value_type" : "Enum",
+          "start_bit" : 4,
+          "bit_length" : 2,
+          "scale" : 1.0,
+          "offset" : 0.0,
+          "range" : {
+            "min" : 0,
+            "max" : 3
+          },
+          "value_table" : [
+            { "value" : "0x0", "desp" : "none" },
+            { "value" : "0x1", "desp" : "Left" },
+            { "value" : "0x2", "desp" : "Right" }
+          ]
+        }
+      ]
+    },
+    {
+      "id" : "0x222",
+      "endian" : "Intel",
+      "data" : [
+        {
+          "name" : "yaw_rate",
+          "value_type" : "Unsigned",
+          "start_bit" : 0,
+          "bit_length" : 12,
+          "scale" : -0.002132603,
+          "offset" : 2.0943,
+          "range" : {
+            "min" : -2.0943,
+            "max" : 2.0943
+          }
+        },
+        {
+          "name" : "yaw_rate_offset",
+          "value_type" : "Unsigned",
+          "start_bit" : 12,
+          "bit_length" : 12,
+          "scale" : -0.002132603,
+          "offset" : 0.13,
+          "range" : {
+            "min" : -0.13,
+            "max" : 0.13
+          }
+        },
+        {
+          "name" : "yaw_rate_status",
+          "value_type" : "Unsigned",
+          "start_bit" : 31,
+          "bit_length" : 1
+        }      
+      ]
+    }
+  ]
+}

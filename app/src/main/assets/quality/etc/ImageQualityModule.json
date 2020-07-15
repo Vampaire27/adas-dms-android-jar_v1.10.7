@@ -1,0 +1,33 @@
+{
+  "cfg_name": "ImageQualityModule.json",
+  "im_ratio_base": 10000,
+  "im_image_normal_width": 1280,
+  "im_image_normal_height": 720,
+  "im_binary_thres": 30,
+  "im_text_thres": 250,
+  "enable_blur": 0,
+  "enable_freeze": 0,
+  "enable_shelter": 1,
+  "color_rgb": 0,
+  "lower_limit": 10,
+  "lower_limit_ratio": 0.5,
+  "upper_limit": 20,
+  "upper_limit_ratio": 0.4,
+  "blur_cfg": {
+    "check_blur_edge_grayspan_th": 6,
+    "check_blur_vote_min": 100,
+    "sigma_span_th": 4,
+    "blur_radius_dist": 30,
+    "block_ratio": 50
+  },
+  "freeze_cfg": {
+    "freeze_ratio": 30,
+    "freeze_pixel_th": 30
+  },
+  "shelter_cfg": {
+    "shelter_block": 4,
+    "shelter_pixel_dist": 1,
+    "shelter_block_blurpixel_min": 5,
+    "shelter_block_ratio": 10
+  }
+}

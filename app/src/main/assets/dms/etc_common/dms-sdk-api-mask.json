@@ -1,0 +1,9 @@
+{
+  "fn_symbol": "../etc/models/models_mask_mxnet/dms-mask-symbol.json",
+  "fn_params": "../etc/models/models_mask_mxnet/dms-mask.params",
+  "num": 1,
+  "height": 64,
+  "width": 64,
+  "channel": 1,
+  "model_ver" : "com.hobot.native.hobot-dms.models-tengine:models_mask_mxnet:2020.04.08"
+}

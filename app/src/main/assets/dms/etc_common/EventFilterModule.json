@@ -1,0 +1,76 @@
+{
+    "ENABLE" : {
+        "enable" : 0,
+        "check_num" : 4,
+        "history_num" : 10
+    },
+
+    "DFW" : {
+        "enable" : 1,
+        "warn_interval_max": 15000,
+        "upload_interval_min": 3000,
+        "upload_interval_max": 15000,
+        "left_score_thld": 0.45,
+        "right_score_thld":0.45
+    },
+
+    "DDW" : {
+        "enable" : 1,
+        "warn_interval_max": 15000,
+        "upload_interval_min": 3000,
+        "upload_interval_max": 15000
+    },
+
+    "DYA" : {
+        "enable" : 1,
+        "warn_interval_max": 15000,
+        "upload_interval_min": 3000,
+        "upload_interval_max": 15000,
+        "dya_mthh2faceh": 0.20,
+        "dya_mthh2mthw": 0.60
+    },
+
+    "DCA" : {
+        "enable" : 1,
+        "warn_interval_max": 15000,
+        "upload_interval_min": 3000,
+        "upload_interval_max": 15000,
+        "dca_score_thld" : 0.8
+    },
+
+    "DSA" : {
+        "enable" : 1,
+        "warn_interval_max": 15000,
+        "upload_interval_min": 3000,
+        "upload_interval_max": 15000,
+        "dsa_score_thld" : 0.8
+    },
+
+    "DAA" : {
+        "enable" : 1,
+        "warn_interval_max": 15000,
+        "upload_interval_min": 3000,
+        "upload_interval_max": 15000
+    },
+
+    "DEBA" : {
+        "enable" : 1,
+        "warn_interval_max": 15000,
+        "upload_interval_min": 3000,
+        "upload_interval_max": 15000
+    },
+
+    "DDRA" : {
+        "enable" : 1,
+        "warn_interval_max": 15000,
+        "upload_interval_min": 3000,
+        "upload_interval_max": 15000
+    },
+
+    "DSBA" : {
+        "enable" : 1,
+        "warn_interval_max": 15000,
+        "upload_interval_min": 3000,
+        "upload_interval_max": 15000
+    }
+}

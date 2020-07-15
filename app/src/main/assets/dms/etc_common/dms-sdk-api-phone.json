@@ -1,0 +1,11 @@
+{
+  "fn_symbol": "../etc/models/models_phonehand_mxnet/dms-phonehand-symbol.json",
+  "fn_params": "../etc/models/models_phonehand_mxnet/dms-phonehand.params",
+  "num": 1,
+  "height": 64,
+  "width": 64,
+  "channel": 1,
+  "conf_thres" : 0.7,
+  "roi_scale" : [1.5, 1.25, 1.5, 1.25],
+  "model_ver" : "com.hobot.native.hobot-dms.models-tengine:models_phonehand_mxnet:2019.08.07"
+}

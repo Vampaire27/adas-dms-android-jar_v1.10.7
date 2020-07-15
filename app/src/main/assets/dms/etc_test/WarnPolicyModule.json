@@ -1,0 +1,144 @@
+{
+  "VEHINFO": {
+    "delay_tms_thld": 3000
+  },
+  "DFW": {
+    "params": {
+      "left_eye_close_score_thld": 0.80,
+      "right_eye_close_score_thld": 0.80
+    },
+    "enable_switch": {
+      "enable": 1,
+      "upper_border_speed": 30.0,
+      "lower_border_speed": 28.0,
+      "turn_light_sensitive": 1,
+      "steering_sensitive": 1,
+      "steering_angle": 60.0,
+      "left_yaw_thld": 45.0,
+      "right_yaw_thld": 40.0,
+      "up_pitch_thld": 45.0,
+      "down_pitch_thld": 20.0
+    }
+  },
+  "DDW": {
+    "params": {
+      "left_ang_thld": 30,
+      "right_ang_thld": 40,
+      "up_ang_thld": 30,
+      "down_ang_thld": 20
+    },
+    "enable_switch": {
+      "enable": 1,
+      "upper_border_speed": 30.0,
+      "lower_border_speed": 28.0,
+      "turn_light_sensitive": 1,
+      "steering_sensitive": 1,
+      "steering_angle": 60.0,
+      "enable_mask": 1
+    }
+  },
+  "DYA": {
+    "params": {
+      "upper_border_speed": 30.0,
+      "lower_border_speed": 28.0,
+      "scl_mth_face_thld": 0.28,
+      "scl_mthH_2_mthW_thld": 0.68,
+      "dya_tail_thld": 0.12,
+      "dya_duration_time_thld": 2000,
+      "dya_tail_time_thld": 500,
+      "dya_scl_ldmk_variance_thld": 5.6,
+      "dya_ldmk_variance_time_thld": 2000
+    },
+    "enable_switch": {
+      "enable": 1,
+      "speed_sensitive": 1
+    }
+  },
+  "DSA": {
+    "params": {
+      "upper_border_speed": 30.0,
+      "lower_border_speed": 28.0,
+      "smoke_exist_score_thld0": 0.99,
+      "smoke_exist_score_thld1": 0.85,
+      "smoke_time_window0": 1500,
+      "smoke_time_window1": 2500
+    },
+    "enable_switch": {
+      "enable": 1,
+      "speed_sensitive": 1
+    }
+  },
+  "DCA": {
+    "params": {
+      "upper_border_speed": 30.0,
+      "lower_border_speed": 28.0,
+      "phone_exist_score_thld0": 0.90,
+      "phone_exist_score_thld1": 0.15,
+      "dca_time_window0": 2000,
+      "dca_time_window1": 500
+    },
+    "enable_switch": {
+      "enable": 1,
+      "speed_sensitive": 1
+    }
+  },
+  "DAA": {
+    "params": {
+      "upper_border_speed": 30.0,
+      "lower_border_speed": 28.0,
+      "no_face_time_thld": 30000
+    },
+    "enable_switch": {
+      "enable": 1,
+      "speed_sensitive": 1
+    }
+  },
+  "DEBA": {
+    "params": {
+      "deba_score_thld": 0.5
+    },
+    "enable_switch": {
+      "enable": 1,
+      "alarm_speed_thld": 30,
+      "left_yaw_thld": 30.0,
+      "right_yaw_thld": 30.0,
+      "up_pitch_thld": 25.0,
+      "down_pitch_thld": 20.0,
+      "deba_time_window": 3000
+    }
+  },
+  "DDRA": {
+    "params": {
+      "upper_border_speed": 30.0,
+      "lower_border_speed": 28.0,
+      "drink_exist_score_thld0": 0.6,
+      "drink_exist_score_thld1": 0.1,
+      "ddra_time_window0": 1500,
+      "ddra_time_window1": 500
+    },
+    "enable_switch": {
+      "enable": 1
+    }
+  },
+  "DSBA": {
+    "params": {
+      "upper_border_speed": 30.0,
+      "lower_border_speed": 28.0,
+      "no_exist_score_thld": 0.85,
+      "dsba_time_window": 10000,
+      "cover_score_thld": 0.75,
+      "dsba_cover_time_window": 10000,
+      "face_safetybelt_iou_thld": 0.3
+    },
+    "enable_switch": {
+      "enable": 1
+    }
+  },
+  "interact": {
+    "ddra_dca": {
+      "enable": 1,
+      "ddra_suppressed_dca_confidence0": 0.8,
+      "ddra_suppressed_dca_confidence1": 0.8
+    }
+  }
+}

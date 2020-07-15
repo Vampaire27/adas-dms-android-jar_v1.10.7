@@ -1,0 +1,162 @@
+{
+  "HobotDMSContext": {
+    "redirect": "",
+    "loglevel": 7,
+    "package": "com.hobot.dms.sample",
+    "license_path": "/sdcard/hobot/license",
+    "bitanswer_sn_path": "/sdcard/.bitanswer/sn.txt",
+    "bitanswer_root_path": "/sdcard/.bitanswer/",
+    "bitanswer_feature_id": 1,
+    "auth_method": 10,
+    "device_path": "/dev/i2c-4",
+    "module": "adas",
+    "lock_path": "/sdcard/",
+    "imei": "1111111",
+    "kernel_mode": 0,
+    "engine_mode": 0,
+    "img_mirror_enable": 0,
+    "feed_frame_ms": 150,
+    "engine_0": {
+      "type": "norm",
+      "color_mode": 0,
+      "draw_mode": 0,
+      "playback": 0,
+      "input_mode": 2,
+      "output_mode": 1,
+      "enable_event_dispatch": 1,
+      "enable_recorder": 0,
+      "enable_draw": 0,
+      "enable_display": 0,
+      "enable_audio_out": 0,
+      "enable_dca": 1,
+      "enable_dsa": 1,
+      "enable_dsba": 0,
+      "enable_drink": 0,
+      "enable_dfw": 1,
+      "enable_deba": 0,
+      "enable_mask" :1
+    },
+    "engine_1": {
+      "type": "calib",
+      "color_mode": 0,
+      "draw_mode": 0,
+      "playback": 0,
+      "input_mode": 2,
+      "output_mode": 1,
+      "enable_event_dispatch": 1,
+      "enable_recorder": 0,
+      "enable_draw": 0,
+      "enable_display": 0,
+      "enable_audio_out": 0,
+      "enable_dca": 0,
+      "enable_dsa": 0,
+      "enable_dsba": 0,
+      "enable_drink": 0,
+      "enable_dfw": 1,
+      "enable_deba": 0
+    },
+    "camera": {
+      "redirect": "",
+      "image_width": 1280,
+      "image_height": 720
+    },
+    "storage": {
+      "config_name": "StorageManager.json"
+    },
+    "core_bindings": {
+      "max_cores": 8,
+      "cpu0": 1,
+      "cpu1": 1,
+      "cpu2": 0,
+      "cpu3": 0,
+      "cpu4": 0,
+      "cpu5": 0,
+      "cpu6": 0,
+      "cpu7": 0
+    }
+  },
+  "CameraModule": {
+    "interval": 150,
+    "type": "raw_android",
+    "camera_id": 1,
+    "loglevel": 4
+  },
+  "VideoInputModule": {
+    "video_name": "/sdcard/hobot/dms/data/test.mp4",
+    "save_img_dir": "/sdcard/hobot/dms/data/img/"
+  },
+  "MetaInputModule": {
+    "proto_name": "/sdcard/hobot/dms/data/test.proto",
+    "min_frame_interval": 150
+  },
+  "ImageCheckModule": {
+    "redirect": "ImageCheckModule.json"
+  },
+  "FaceDetectModule": {
+    "redirect": "dms-sdk-api-face-hand.json"
+  },
+  "CellPhoneClsfModule": {
+    "redirect": "dms-sdk-api-phone.json"
+  },
+  "LDMKModule": {
+    "redirect": "dms-sdk-api-ldmk.json"
+  },
+  "EyeClsfModule": {
+    "redirect": "dms-sdk-api-eye.json",
+    "redirect_glasses": "dms-sdk-api-glasses.json",
+    "glasses_deetct_interval": 5
+  },
+  "SmokeClsfModule": {
+    "redirect": "dms-sdk-api-smoke.json"
+  },
+  "MaskClsfModule" : {
+    "redirect" : "dms-sdk-api-mask.json",
+    "frame_skip_thld" :5,
+    "frame_skip_frequency_thld" :5,
+    "mask_skip_thld" :0.5,
+    "time_window" :2000,
+    "mask_thld" : 0.7
+  }, 
+  "SafetyBeltClsfModule": {
+    "redirect": "dms-sdk-api-safetybelt.json"
+  },
+  "DrinkClsfModule": {
+    "redirect": "dms-sdk-api-drink.json"
+  },
+  "WarnPolicyModule": {
+    "redirect": "WarnPolicyModule.json"
+  },
+  "FaceOrientCalibration": {
+    "redirect": "FaceOrientCalib.json"
+  },
+  "DriverFaceScopeCalibration" : {
+    "redirect" : "DriverFaceScopeCalib.json"
+   },
+  "EventFilterModule": {
+    "redirect": "EventFilterModule.json"
+  },
+  "RecorderModule": {
+    "enable_video": 1,
+    "enable_proto": 1,
+    "use_custom_name": 0,
+    "out_video_name": "/home/haoming/Desktop/test.mp4",
+    "out_proto_name": "/home/haoming/Desktop/test.proto"
+  },
+  "EventModule": {
+    "redirect": "EventModule.json"
+  },
+  "EventDispatchModule": {
+    "event_map": "event_map.json"
+  },
+  "DrawModule": {
+    "background_file": "./res/png/background_resized.png",
+    "logo_file": "./res/png/logo_resized.png"
+  },
+  "DisplayModule": {
+    "display_width": 640,
+    "display_height": 360
+  },
+  "OutputCollectModule": {
+    "output_img": 1
+  }
+}

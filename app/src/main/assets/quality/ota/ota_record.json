@@ -1,0 +1,55 @@
+{
+  "version":"1.1",
+
+  "value_type":{
+    "int":0,
+    "float":1,
+    "long":2,
+    "String":3,
+    "double":4
+  },
+
+  "config_type":{
+    "json_object":0,
+    "json_array":1
+  },
+  
+  "example_record_infos": [
+    {
+      "item_type":"DAA_LOWER_SPEED",
+      "config_type":1,
+      "value_type":0,
+      "reflect_id":"051"
+    }
+  ],
+
+  "record_infos":[
+    {
+      "item_type":"LOWER_LIMIT",
+      "config_type":0,
+      "value_type":0,
+      "reflect_id":"01"
+    },
+
+    {
+      "item_type":"UPPER_LIMIT",
+      "config_type":0,
+      "value_type":0,
+      "reflect_id":"02"
+    },
+
+    {
+      "item_type":"LOWER_LIMIT_RATIO",
+      "config_type":0,
+      "value_type":1,
+      "reflect_id":"03"
+    },
+
+    {
+      "item_type":"UPPER_LIMIT_RATIO",
+      "config_type":0,
+      "value_type":1,
+      "reflect_id":"04"
+    }
+  ]
+}

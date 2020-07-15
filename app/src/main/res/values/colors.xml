@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#3F51B5</color>
+    <color name="colorAccent">#3F51B5</color>
+
+    <color name="main_color">#00bde5</color>
+    <color name="main_bg_color">#18191D</color>
+    <color name="main_text_color">#424242</color>
+    <color name="functional_text_color">#c1c1c1</color>
+    <color name="window_background">#f3f8f9</color>
+    <color name="main_color_blue">#1f9ea3</color>
+    <color name="main_color_blue_press">#0f8ea3</color>
+
+    <color name="title_bar_bg">#202223</color>
+
+    <color name="light_gray">#555555</color>
+    <color name="light_line">#e7e7e7</color>
+    <color name="light_gray_line">#e7e7e7</color>
+
+
+    <color name="buttons_view_bk">@android:color/darker_gray</color>
+    <color name="content_bk">@android:color/background_light</color>
+
+    <color name="deep_dark">#303030</color>
+    <color name="text_color_snapshot">#333333</color>
+    <color name="text_color_performance">@color/deep_dark</color>
+    <color name="text_color_gray">#d5d6d7</color>
+    <color name="text_color_gray1">#545454</color>
+    <color name="text_color_gray2">#adadad</color>
+    <color name="btn_text_color">#e7e8e9</color>
+    <color name="bg_performance">#99ffffff</color>
+    <color name="bg_blue">#119da4</color>
+    <color name="black">#000000</color>
+    <color name="bg_title_bar">#222b2d</color>
+    <color name="dialog_title_bg">#282c2c</color>
+    <color name="blank_box_gray">#dcdedf</color>
+    <color name="blank_box_focus_gray">#a0a1a2</color>
+    <color name="bg_gray">#d8d8d8</color>
+    <color name="bg_gray1">#f2f2f2</color>
+    <color name="bg_settings">#99d8d8d8</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="user_registered">#00ff21</color>
+    <color name="red">#ff0000</color>
+    <color name="orange">#ff7600</color>
+    <color name="text_snapshot">#2c5b56</color>
+    <color name="grass_green">#87BEB8</color>
+    <color name="green">#00FF00</color>
+    <color name="green_emerald">#00C957</color>
+    <color name="white">#ffffff</color>
+
+    <color name="black_1">#272c2e</color>
+    <color name="black_2">#1f2223</color>
+    <color name="black_3">#212224</color>
+    <color name="black_4">#313234</color>
+
+    <color name="blue_1">#009999</color>
+    <color name="blue_2">#339999</color>
+    <color name="blue_3">#00BFFF</color>
+    <color name="blue_4">#1E90FF</color>
+    <color name="blue_5">#0000FF</color>
+    <color name="blue_6">#ff3e8dfe</color>
+    <color name="blue_7">#FF3E8EFF</color>
+    <color name="blue_8">#ff2c333a</color>
+
+    <color name="gray_1">#e8e8e8</color>
+    <color name="gray_2">#cccccc</color>
+    <color name="gray_3">#717374</color>
+    <color name="gray_4">#999999</color>
+    <color name="gray_5">#adab8d</color>
+    <color name="gray_10">#e8eaeb</color>
+    <color name="gray_11">#f5f5f5</color>
+    <color name="yellow">#ffcc33</color>
+    <color name="yellow_1">#adab8d</color>
+
+    <drawable name="btn_confirm_normal">#009999</drawable>
+    <drawable name="btn_confirm_press">#339999</drawable>
+    <drawable name="btn_cancel_normal">#e8e8e8</drawable>
+    <drawable name="btn_cancel_press">#cccccc</drawable>
+
+
+    <color name="hobotMainBlue">#008cd6</color>
+    <color name="colorMainWhite">#ffefefef</color>
+    <color name="colorTransparent">#e2272727</color>
+    <color name="colorTransparentBlue">#a6008cd6</color>
+    <color name="gray_13">#ff2c333a</color>
+    <color name="gray_12">#ffE9EAEB</color>
+    <color name="gray_6">#FF575C61</color>
+    <color name="gray_7">#FF818489</color>
+    <color name="gray_8">#fff5f5f5</color>
+    <color name="gray_9">#ffabadb0</color>
+    <color name="gray_14">#FFB0B0B0</color>
+    <color name="gray_15">#FFD5D6D8</color>
+    <color name="gray_16">#2c333a</color>
+    <color name="gray_17">#171A21</color>
+    <color name="alpha_1">#141861c8</color>
+
+    <color name="blue_9">#FF363d44</color>
+    <color name="blue_11">#ff313645</color>
+    <color name="blue_12">#ff282C38</color>
+    <color name="background">#b0000000</color>
+    <color name="primary_material_light_1">#e91e63</color>
+    <color name="primary_dark_material_light">#757575</color>
+    <color name="accent_material_dark">#009999</color>
+    <color name="background_material_dark">#b36363</color>
+</resources>

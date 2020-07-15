@@ -1,0 +1,6 @@
+{
+  "redirect" : "",
+  "network" : {
+    "server_ip" : "tcp://*:5560"
+  }
+}

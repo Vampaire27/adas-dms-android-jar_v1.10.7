@@ -1,0 +1,2546 @@
+{
+  "nodes": [
+    {
+      "op": "null", 
+      "name": "data", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_conv0_weight", 
+      "attr": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(48L, 0L, 3L, 3L)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_conv0_bias", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(48L,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "hybridsequential0_conv0_fwd", 
+      "attr": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "48", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[0, 0, 0], [1, 0, 0], [2, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_batchnorm0_gamma", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_batchnorm0_beta", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_batchnorm0_running_mean", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_batchnorm0_running_var", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "hybridsequential0_batchnorm0_fwd", 
+      "attr": {
+        "axis": "1", 
+        "cudnn_off": "False", 
+        "eps": "1.00001e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[3, 0, 0], [4, 0, 0], [5, 0, 0], [6, 0, 1], [7, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "hybridsequential0_relu0_fwd", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[8, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_conv0_weight", 
+      "attr": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(10L, 0L, 1L, 1L)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_conv0_bias", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(10L,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "hybridsequential0_inceptionfactoryb0_conv0_fwd", 
+      "attr": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "10", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[9, 0, 0], [10, 0, 0], [11, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm0_gamma", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm0_beta", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm0_running_mean", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm0_running_var", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm0_fwd", 
+      "attr": {
+        "axis": "1", 
+        "cudnn_off": "False", 
+        "eps": "1.00001e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[12, 0, 0], [13, 0, 0], [14, 0, 0], [15, 0, 1], [16, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "hybridsequential0_inceptionfactoryb0_relu0_fwd", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[17, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_conv1_weight", 
+      "attr": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(12L, 0L, 3L, 3L)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_conv1_bias", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(12L,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "hybridsequential0_inceptionfactoryb0_conv1_fwd", 
+      "attr": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "12", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[18, 0, 0], [19, 0, 0], [20, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm1_gamma", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm1_beta", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm1_running_mean", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm1_running_var", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm1_fwd", 
+      "attr": {
+        "axis": "1", 
+        "cudnn_off": "False", 
+        "eps": "1.00001e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[21, 0, 0], [22, 0, 0], [23, 0, 0], [24, 0, 1], [25, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "hybridsequential0_inceptionfactoryb0_relu1_fwd", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[26, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_conv2_weight", 
+      "attr": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(10L, 0L, 1L, 1L)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_conv2_bias", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(10L,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "hybridsequential0_inceptionfactoryb0_conv2_fwd", 
+      "attr": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "10", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[9, 0, 0], [28, 0, 0], [29, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm2_gamma", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm2_beta", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm2_running_mean", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm2_running_var", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm2_fwd", 
+      "attr": {
+        "axis": "1", 
+        "cudnn_off": "False", 
+        "eps": "1.00001e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[30, 0, 0], [31, 0, 0], [32, 0, 0], [33, 0, 1], [34, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "hybridsequential0_inceptionfactoryb0_relu2_fwd", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[35, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_conv3_weight", 
+      "attr": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(12L, 0L, 3L, 3L)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_conv3_bias", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(12L,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "hybridsequential0_inceptionfactoryb0_conv3_fwd", 
+      "attr": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "12", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[36, 0, 0], [37, 0, 0], [38, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm3_gamma", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm3_beta", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm3_running_mean", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm3_running_var", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm3_fwd", 
+      "attr": {
+        "axis": "1", 
+        "cudnn_off": "False", 
+        "eps": "1.00001e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[39, 0, 0], [40, 0, 0], [41, 0, 0], [42, 0, 1], [43, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "hybridsequential0_inceptionfactoryb0_relu3_fwd", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[44, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_conv4_weight", 
+      "attr": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(12L, 0L, 3L, 3L)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_conv4_bias", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(12L,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "hybridsequential0_inceptionfactoryb0_conv4_fwd", 
+      "attr": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "12", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[45, 0, 0], [46, 0, 0], [47, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm4_gamma", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm4_beta", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm4_running_mean", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm4_running_var", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm4_fwd", 
+      "attr": {
+        "axis": "1", 
+        "cudnn_off": "False", 
+        "eps": "1.00001e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[48, 0, 0], [49, 0, 0], [50, 0, 0], [51, 0, 1], [52, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "hybridsequential0_inceptionfactoryb0_relu4_fwd", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[53, 0, 0]]
+    }, 
+    {
+      "op": "Pooling", 
+      "name": "hybridsequential0_inceptionfactoryb0_pool0_fwd", 
+      "attr": {
+        "global_pool": "False", 
+        "kernel": "(3, 3)", 
+        "pad": "(1, 1)", 
+        "pool_type": "max", 
+        "pooling_convention": "valid", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[9, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_conv5_weight", 
+      "attr": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16L, 0L, 1L, 1L)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_conv5_bias", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16L,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "hybridsequential0_inceptionfactoryb0_conv5_fwd", 
+      "attr": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "16", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[55, 0, 0], [56, 0, 0], [57, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm5_gamma", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm5_beta", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm5_running_mean", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm5_running_var", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "hybridsequential0_inceptionfactoryb0_batchnorm5_fwd", 
+      "attr": {
+        "axis": "1", 
+        "cudnn_off": "False", 
+        "eps": "1.00001e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[58, 0, 0], [59, 0, 0], [60, 0, 0], [61, 0, 1], [62, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "hybridsequential0_inceptionfactoryb0_relu5_fwd", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[63, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "hybridsequential0_inceptionfactoryb0_concat0", 
+      "attr": {"num_args": "3"}, 
+      "inputs": [[27, 0, 0], [54, 0, 0], [64, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_conv0_weight", 
+      "attr": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(12L, 0L, 1L, 1L)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_conv0_bias", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(12L,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "hybridsequential0_inceptionfactoryb1_conv0_fwd", 
+      "attr": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "12", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[65, 0, 0], [66, 0, 0], [67, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm0_gamma", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm0_beta", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm0_running_mean", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm0_running_var", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm0_fwd", 
+      "attr": {
+        "axis": "1", 
+        "cudnn_off": "False", 
+        "eps": "1.00001e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[68, 0, 0], [69, 0, 0], [70, 0, 0], [71, 0, 1], [72, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "hybridsequential0_inceptionfactoryb1_relu0_fwd", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[73, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_conv1_weight", 
+      "attr": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(24L, 0L, 3L, 3L)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_conv1_bias", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(24L,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "hybridsequential0_inceptionfactoryb1_conv1_fwd", 
+      "attr": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "24", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[74, 0, 0], [75, 0, 0], [76, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm1_gamma", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm1_beta", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm1_running_mean", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm1_running_var", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm1_fwd", 
+      "attr": {
+        "axis": "1", 
+        "cudnn_off": "False", 
+        "eps": "1.00001e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[77, 0, 0], [78, 0, 0], [79, 0, 0], [80, 0, 1], [81, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "hybridsequential0_inceptionfactoryb1_relu1_fwd", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[82, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_conv2_weight", 
+      "attr": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(12L, 0L, 1L, 1L)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_conv2_bias", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(12L,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "hybridsequential0_inceptionfactoryb1_conv2_fwd", 
+      "attr": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "12", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[65, 0, 0], [84, 0, 0], [85, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm2_gamma", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm2_beta", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm2_running_mean", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm2_running_var", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm2_fwd", 
+      "attr": {
+        "axis": "1", 
+        "cudnn_off": "False", 
+        "eps": "1.00001e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[86, 0, 0], [87, 0, 0], [88, 0, 0], [89, 0, 1], [90, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "hybridsequential0_inceptionfactoryb1_relu2_fwd", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[91, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_conv3_weight", 
+      "attr": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(24L, 0L, 3L, 3L)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_conv3_bias", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(24L,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "hybridsequential0_inceptionfactoryb1_conv3_fwd", 
+      "attr": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "24", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[92, 0, 0], [93, 0, 0], [94, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm3_gamma", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm3_beta", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm3_running_mean", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm3_running_var", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm3_fwd", 
+      "attr": {
+        "axis": "1", 
+        "cudnn_off": "False", 
+        "eps": "1.00001e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[95, 0, 0], [96, 0, 0], [97, 0, 0], [98, 0, 1], [99, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "hybridsequential0_inceptionfactoryb1_relu3_fwd", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[100, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_conv4_weight", 
+      "attr": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(24L, 0L, 3L, 3L)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_conv4_bias", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(24L,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "hybridsequential0_inceptionfactoryb1_conv4_fwd", 
+      "attr": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "24", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[101, 0, 0], [102, 0, 0], [103, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm4_gamma", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm4_beta", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm4_running_mean", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm4_running_var", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm4_fwd", 
+      "attr": {
+        "axis": "1", 
+        "cudnn_off": "False", 
+        "eps": "1.00001e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[104, 0, 0], [105, 0, 0], [106, 0, 0], [107, 0, 1], [108, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "hybridsequential0_inceptionfactoryb1_relu4_fwd", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[109, 0, 0]]
+    }, 
+    {
+      "op": "Pooling", 
+      "name": "hybridsequential0_inceptionfactoryb1_pool0_fwd", 
+      "attr": {
+        "global_pool": "False", 
+        "kernel": "(3, 3)", 
+        "pad": "(0, 0)", 
+        "pool_type": "max", 
+        "pooling_convention": "valid", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[65, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_conv5_weight", 
+      "attr": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(24L, 0L, 1L, 1L)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_conv5_bias", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(24L,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "hybridsequential0_inceptionfactoryb1_conv5_fwd", 
+      "attr": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "24", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[111, 0, 0], [112, 0, 0], [113, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm5_gamma", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm5_beta", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm5_running_mean", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm5_running_var", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "hybridsequential0_inceptionfactoryb1_batchnorm5_fwd", 
+      "attr": {
+        "axis": "1", 
+        "cudnn_off": "False", 
+        "eps": "1.00001e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[114, 0, 0], [115, 0, 0], [116, 0, 0], [117, 0, 1], [118, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "hybridsequential0_inceptionfactoryb1_relu5_fwd", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[119, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "hybridsequential0_inceptionfactoryb1_concat0", 
+      "attr": {"num_args": "3"}, 
+      "inputs": [[83, 0, 0], [110, 0, 0], [120, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc0_conv0_weight", 
+      "attr": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(24L, 0L, 1L, 1L)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc0_conv0_bias", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(24L,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "hybridsequential0_inceptionfactoryc0_conv0_fwd", 
+      "attr": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "24", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[121, 0, 0], [122, 0, 0], [123, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc0_batchnorm0_gamma", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc0_batchnorm0_beta", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc0_batchnorm0_running_mean", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc0_batchnorm0_running_var", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "hybridsequential0_inceptionfactoryc0_batchnorm0_fwd", 
+      "attr": {
+        "axis": "1", 
+        "cudnn_off": "False", 
+        "eps": "1.00001e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[124, 0, 0], [125, 0, 0], [126, 0, 0], [127, 0, 1], [128, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "hybridsequential0_inceptionfactoryc0_relu0_fwd", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[129, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc0_conv1_weight", 
+      "attr": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(96L, 0L, 3L, 3L)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc0_conv1_bias", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(96L,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "hybridsequential0_inceptionfactoryc0_conv1_fwd", 
+      "attr": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "96", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[130, 0, 0], [131, 0, 0], [132, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc0_batchnorm1_gamma", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc0_batchnorm1_beta", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc0_batchnorm1_running_mean", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc0_batchnorm1_running_var", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "hybridsequential0_inceptionfactoryc0_batchnorm1_fwd", 
+      "attr": {
+        "axis": "1", 
+        "cudnn_off": "False", 
+        "eps": "1.00001e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[133, 0, 0], [134, 0, 0], [135, 0, 0], [136, 0, 1], [137, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "hybridsequential0_inceptionfactoryc0_relu1_fwd", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[138, 0, 0]]
+    }, 
+    {
+      "op": "Pooling", 
+      "name": "hybridsequential0_inceptionfactoryc0_pool0_fwd", 
+      "attr": {
+        "global_pool": "False", 
+        "kernel": "(3, 3)", 
+        "pad": "(0, 0)", 
+        "pool_type": "max", 
+        "pooling_convention": "valid", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[121, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc0_conv2_weight", 
+      "attr": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(96L, 0L, 1L, 1L)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc0_conv2_bias", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(96L,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "hybridsequential0_inceptionfactoryc0_conv2_fwd", 
+      "attr": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "96", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[140, 0, 0], [141, 0, 0], [142, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc0_batchnorm2_gamma", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc0_batchnorm2_beta", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc0_batchnorm2_running_mean", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc0_batchnorm2_running_var", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "hybridsequential0_inceptionfactoryc0_batchnorm2_fwd", 
+      "attr": {
+        "axis": "1", 
+        "cudnn_off": "False", 
+        "eps": "1.00001e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[143, 0, 0], [144, 0, 0], [145, 0, 0], [146, 0, 1], [147, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "hybridsequential0_inceptionfactoryc0_relu2_fwd", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[148, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "hybridsequential0_inceptionfactoryc0_concat0", 
+      "attr": {"num_args": "2"}, 
+      "inputs": [[139, 0, 0], [149, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc1_conv0_weight", 
+      "attr": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(72L, 0L, 1L, 1L)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc1_conv0_bias", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(72L,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "hybridsequential0_inceptionfactoryc1_conv0_fwd", 
+      "attr": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "72", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[150, 0, 0], [151, 0, 0], [152, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc1_batchnorm0_gamma", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc1_batchnorm0_beta", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc1_batchnorm0_running_mean", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc1_batchnorm0_running_var", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "hybridsequential0_inceptionfactoryc1_batchnorm0_fwd", 
+      "attr": {
+        "axis": "1", 
+        "cudnn_off": "False", 
+        "eps": "1.00001e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[153, 0, 0], [154, 0, 0], [155, 0, 0], [156, 0, 1], [157, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "hybridsequential0_inceptionfactoryc1_relu0_fwd", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[158, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc1_conv1_weight", 
+      "attr": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(288L, 0L, 3L, 3L)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc1_conv1_bias", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(288L,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "hybridsequential0_inceptionfactoryc1_conv1_fwd", 
+      "attr": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "288", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[159, 0, 0], [160, 0, 0], [161, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc1_batchnorm1_gamma", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc1_batchnorm1_beta", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc1_batchnorm1_running_mean", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc1_batchnorm1_running_var", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "hybridsequential0_inceptionfactoryc1_batchnorm1_fwd", 
+      "attr": {
+        "axis": "1", 
+        "cudnn_off": "False", 
+        "eps": "1.00001e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[162, 0, 0], [163, 0, 0], [164, 0, 0], [165, 0, 1], [166, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "hybridsequential0_inceptionfactoryc1_relu1_fwd", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[167, 0, 0]]
+    }, 
+    {
+      "op": "Pooling", 
+      "name": "hybridsequential0_inceptionfactoryc1_pool0_fwd", 
+      "attr": {
+        "count_include_pad": "True", 
+        "global_pool": "False", 
+        "kernel": "(3, 3)", 
+        "pad": "(0, 0)", 
+        "pool_type": "avg", 
+        "pooling_convention": "valid", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[150, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc1_conv2_weight", 
+      "attr": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(288L, 0L, 1L, 1L)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc1_conv2_bias", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(288L,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "hybridsequential0_inceptionfactoryc1_conv2_fwd", 
+      "attr": {
+        "dilate": "(1, 1)", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "288", 
+        "num_group": "1", 
+        "pad": "(0, 0)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[169, 0, 0], [170, 0, 0], [171, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc1_batchnorm2_gamma", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc1_batchnorm2_beta", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc1_batchnorm2_running_mean", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_inceptionfactoryc1_batchnorm2_running_var", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(0,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "hybridsequential0_inceptionfactoryc1_batchnorm2_fwd", 
+      "attr": {
+        "axis": "1", 
+        "cudnn_off": "False", 
+        "eps": "1.00001e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[172, 0, 0], [173, 0, 0], [174, 0, 0], [175, 0, 1], [176, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "hybridsequential0_inceptionfactoryc1_relu2_fwd", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[177, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "hybridsequential0_inceptionfactoryc1_concat0", 
+      "attr": {"num_args": "2"}, 
+      "inputs": [[168, 0, 0], [178, 0, 0]]
+    }, 
+    {
+      "op": "Flatten", 
+      "name": "hybridsequential0_flatten0_flatten0", 
+      "inputs": [[179, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_dense0_weight", 
+      "attr": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(4, 0)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "hybridsequential0_dense0_bias", 
+      "attr": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(4,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "FullyConnected", 
+      "name": "hybridsequential0_dense0_fwd", 
+      "attr": {
+        "flatten": "True", 
+        "no_bias": "False", 
+        "num_hidden": "4"
+      }, 
+      "inputs": [[180, 0, 0], [181, 0, 0], [182, 0, 0]]
+    }
+  ], 
+  "arg_nodes": [
+    0, 
+    1, 
+    2, 
+    4, 
+    5, 
+    6, 
+    7, 
+    10, 
+    11, 
+    13, 
+    14, 
+    15, 
+    16, 
+    19, 
+    20, 
+    22, 
+    23, 
+    24, 
+    25, 
+    28, 
+    29, 
+    31, 
+    32, 
+    33, 
+    34, 
+    37, 
+    38, 
+    40, 
+    41, 
+    42, 
+    43, 
+    46, 
+    47, 
+    49, 
+    50, 
+    51, 
+    52, 
+    56, 
+    57, 
+    59, 
+    60, 
+    61, 
+    62, 
+    66, 
+    67, 
+    69, 
+    70, 
+    71, 
+    72, 
+    75, 
+    76, 
+    78, 
+    79, 
+    80, 
+    81, 
+    84, 
+    85, 
+    87, 
+    88, 
+    89, 
+    90, 
+    93, 
+    94, 
+    96, 
+    97, 
+    98, 
+    99, 
+    102, 
+    103, 
+    105, 
+    106, 
+    107, 
+    108, 
+    112, 
+    113, 
+    115, 
+    116, 
+    117, 
+    118, 
+    122, 
+    123, 
+    125, 
+    126, 
+    127, 
+    128, 
+    131, 
+    132, 
+    134, 
+    135, 
+    136, 
+    137, 
+    141, 
+    142, 
+    144, 
+    145, 
+    146, 
+    147, 
+    151, 
+    152, 
+    154, 
+    155, 
+    156, 
+    157, 
+    160, 
+    161, 
+    163, 
+    164, 
+    165, 
+    166, 
+    170, 
+    171, 
+    173, 
+    174, 
+    175, 
+    176, 
+    181, 
+    182
+  ], 
+  "node_row_ptr": [
+    0, 
+    1, 
+    2, 
+    3, 
+    4, 
+    5, 
+    6, 
+    7, 
+    8, 
+    11, 
+    12, 
+    13, 
+    14, 
+    15, 
+    16, 
+    17, 
+    18, 
+    19, 
+    22, 
+    23, 
+    24, 
+    25, 
+    26, 
+    27, 
+    28, 
+    29, 
+    30, 
+    33, 
+    34, 
+    35, 
+    36, 
+    37, 
+    38, 
+    39, 
+    40, 
+    41, 
+    44, 
+    45, 
+    46, 
+    47, 
+    48, 
+    49, 
+    50, 
+    51, 
+    52, 
+    55, 
+    56, 
+    57, 
+    58, 
+    59, 
+    60, 
+    61, 
+    62, 
+    63, 
+    66, 
+    67, 
+    68, 
+    69, 
+    70, 
+    71, 
+    72, 
+    73, 
+    74, 
+    75, 
+    78, 
+    79, 
+    80, 
+    81, 
+    82, 
+    83, 
+    84, 
+    85, 
+    86, 
+    87, 
+    90, 
+    91, 
+    92, 
+    93, 
+    94, 
+    95, 
+    96, 
+    97, 
+    98, 
+    101, 
+    102, 
+    103, 
+    104, 
+    105, 
+    106, 
+    107, 
+    108, 
+    109, 
+    112, 
+    113, 
+    114, 
+    115, 
+    116, 
+    117, 
+    118, 
+    119, 
+    120, 
+    123, 
+    124, 
+    125, 
+    126, 
+    127, 
+    128, 
+    129, 
+    130, 
+    131, 
+    134, 
+    135, 
+    136, 
+    137, 
+    138, 
+    139, 
+    140, 
+    141, 
+    142, 
+    143, 
+    146, 
+    147, 
+    148, 
+    149, 
+    150, 
+    151, 
+    152, 
+    153, 
+    154, 
+    155, 
+    158, 
+    159, 
+    160, 
+    161, 
+    162, 
+    163, 
+    164, 
+    165, 
+    166, 
+    169, 
+    170, 
+    171, 
+    172, 
+    173, 
+    174, 
+    175, 
+    176, 
+    177, 
+    178, 
+    181, 
+    182, 
+    183, 
+    184, 
+    185, 
+    186, 
+    187, 
+    188, 
+    189, 
+    190, 
+    193, 
+    194, 
+    195, 
+    196, 
+    197, 
+    198, 
+    199, 
+    200, 
+    201, 
+    204, 
+    205, 
+    206, 
+    207, 
+    208, 
+    209, 
+    210, 
+    211, 
+    212, 
+    213, 
+    216, 
+    217, 
+    218, 
+    219, 
+    220, 
+    221, 
+    222
+  ], 
+  "heads": [[183, 0, 0]], 
+  "attrs": {
+    "build_version": ["str", "nnvm_1.3.0 commit d99840f9cbcb2e0c642da5f6b602bad8ae875726 Author: Lichao.Huang <lichao.huang@hobot.cc> Date:   Wed Nov 28 14:59:11 2018 +0800"], 
+    "mxnet_version": ["int", 10300]
+  }
+}

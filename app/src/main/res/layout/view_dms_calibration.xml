@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <include layout="@layout/view_calibration_toolbar" />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="130dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="40dp"
+        android:background="#313645"
+        android:fontFamily="sans-serif-light"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/calibration_cancel"
+        android:textAllCaps="false"
+        android:textColor="#3FFFFFFF"
+        android:textSize="26dp" />
+
+    <Button
+        android:id="@+id/confirm_btn"
+        android:layout_width="130dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/cancel_btn"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/blue_7"
+        android:fontFamily="sans-serif-light"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/calibration_next"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="26dp" />
+
+    <Button
+        android:id="@+id/before_btn"
+        android:layout_width="130dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/cancel_btn"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/blue_7"
+        android:fontFamily="sans-serif-light"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/calibration_prev"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="26dp" />
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:background="#103E8EFF">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_face_frame" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+{
+  "fn_symbol": "../etc/models/models_ldmk25_mxnet_c1v2/ldmk25-symbol.json",
+  "fn_params": "../etc/models/models_ldmk25_mxnet_c1v2/ldmk25.params",
+  "num": 1,
+  "height": 64,
+  "width": 64,
+  "channel": 1,
+  "norm_len": 51.2,
+  "model_ver" : "com.hobot.native.hobot-dms.models-tengine:models_ldmk25_mxnet_c1v2:2019.09.09"
+}

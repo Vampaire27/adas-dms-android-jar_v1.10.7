@@ -1,0 +1,437 @@
+{
+  "sound_interval": -1,
+  "sound_switch": true,
+  "upload_interval": -1,
+  "upload_switch": true,
+  "event_params": [
+    {
+      "proto_name": "kEvent_Pcw_Warning",
+      "proto_pos": 1,
+      "priority": 1,
+      "event_group": "ADAS",
+      "event_type": "PCW",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "pcw",
+        "switch": true,
+        "interval": 3000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 3000
+      }
+    },
+    {
+      "proto_name": "kEvent_Fcw_Warning",
+      "proto_pos": 2,
+      "priority": 2,
+      "event_group": "ADAS",
+      "event_type": "FCW",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "fcw",
+        "switch": true,
+        "interval": 3000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 3000
+      }
+    },
+    {
+      "proto_name": "kEvent_Hmw_Warning",
+      "proto_pos": 3,
+      "priority": 3,
+      "event_group": "ADAS",
+      "event_type": "HMW",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "hmw",
+        "switch": true,
+        "interval": 3000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 3000
+      }
+    },
+    {
+      "proto_name": "kEvent_Ldw_Warning_Left",
+      "proto_pos": 4,
+      "priority": 4,
+      "event_group": "ADAS",
+      "event_type": "LDW_LEFT",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "ldw",
+        "switch": true,
+        "interval": 3000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 3000
+      }
+    },
+    {
+      "proto_name": "kEvent_Ldw_Warning_Right",
+      "proto_pos": 5,
+      "priority": 4,
+      "event_group": "ADAS",
+      "event_type": "LDW_RIGHT",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "ldw",
+        "switch": true,
+        "interval": 3000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 3000
+      }
+    },
+    {
+      "proto_name": "kEvent_Fvsa_Warning",
+      "proto_pos": 12,
+      "priority": 6,
+      "event_group": "ADAS",
+      "event_type": "FVSA",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "fvsa",
+        "switch": true,
+        "interval": 10000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 10000
+      }
+    },
+    {
+      "proto_name": "EVENT_DAA",
+      "proto_pos": 10,
+      "priority": 7,
+      "event_group": "DMS",
+      "event_type": "DAA",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "daa",
+        "switch": true,
+        "interval": 30000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 30000
+      }
+    },
+    {
+      "proto_name": "EVENT_DOA",
+      "proto_pos": 10,
+      "priority": 8,
+      "event_group": "DMS",
+      "event_type": "DOA",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "doa",
+        "switch": true,
+        "interval": 30000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 30000
+      }
+    },
+    {
+      "proto_name": "EVENT_DEBA",
+      "proto_pos": 12,
+      "priority": 10,
+      "event_group": "DMS",
+      "event_type": "DEBA",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "deba",
+        "switch": true,
+        "interval": 300000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 300000
+      }
+    },
+    {
+      "proto_name": "EVENT_DDW_L",
+      "proto_pos": 1,
+      "priority": 11,
+      "event_group": "DMS",
+      "event_type": "DDW_LEFT",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "ddw",
+        "switch": true,
+        "interval": 15000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 15000
+      }
+    },
+    {
+      "proto_name": "EVENT_DDW_R",
+      "proto_pos": 2,
+      "priority": 11,
+      "event_group": "DMS",
+      "event_type": "DDW_RIGHT",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "ddw",
+        "switch": true,
+        "interval": 15000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 15000
+      }
+    },
+    {
+      "proto_name": "EVENT_DDW_U",
+      "proto_pos": 3,
+      "priority": 11,
+      "event_group": "DMS",
+      "event_type": "DDW_UP",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "ddw",
+        "switch": true,
+        "interval": 15000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 15000
+      }
+    },
+    {
+      "proto_name": "EVENT_DDW_D",
+      "proto_pos": 4,
+      "priority": 11,
+      "event_group": "DMS",
+      "event_type": "DDW_DOWN",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "ddw",
+        "switch": true,
+        "interval": 15000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 15000
+      }
+    },
+    {
+      "proto_name": "EVENT_DFW",
+      "proto_pos": 5,
+      "priority": 12,
+      "event_group": "DMS",
+      "event_type": "DFW",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "dfw",
+        "switch": true,
+        "interval": 15000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 15000
+      }
+    },
+    {
+      "proto_name": "EVENT_DYA",
+      "proto_pos": 6,
+      "priority": 13,
+      "event_group": "DMS",
+      "event_type": "DYA",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "dya",
+        "switch": true,
+        "interval": 15000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 15000
+      }
+    },
+    {
+      "proto_name": "EVENT_DCA",
+      "proto_pos": 7,
+      "priority": 14,
+      "event_group": "DMS",
+      "event_type": "DCA",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "dca",
+        "switch": true,
+        "interval": 30000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 30000
+      }
+    },
+    {
+      "proto_name": "EVENT_DSA",
+      "proto_pos": 8,
+      "priority": 15,
+      "event_group": "DMS",
+      "event_type": "DSA",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "dsa",
+        "switch": true,
+        "interval": 60000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 60000
+      }
+    },
+    {
+      "proto_name": "EVENT_DSBA",
+      "proto_pos": 14,
+      "priority": 16,
+      "event_group": "DMS",
+      "event_type": "DSBA",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "dsba",
+        "switch": true,
+        "interval": 300000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 300000
+      }
+    },
+    {
+      "proto_name": "EVENT_DUA",
+      "proto_pos": 1,
+      "priority": 17,
+      "event_group": "SPEECH",
+      "event_type": "DUA",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "dua",
+        "switch": true,
+        "interval": 30000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 30000
+      }
+    },
+    {
+      "proto_name": "EVENT_DDRA",
+      "proto_pos": 13,
+      "priority": 18,
+      "event_group": "DMS",
+      "event_type": "DDRA",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "ddra",
+        "switch": true,
+        "interval": 15000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 15000
+      }
+    },
+    {
+      "proto_name": "EVENT_DSWA",
+      "proto_pos": 13,
+      "priority": 19,
+      "event_group": "OTHER",
+      "event_type": "DSWA",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "dswa",
+        "switch": true,
+        "interval": 30000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 30000
+      }
+    },
+
+    {
+      "proto_name": "EVENT_INR_1",
+      "proto_pos": 1,
+      "priority": 20,
+      "event_group": "INR",
+      "event_type": "INR_1",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "inr_1",
+        "switch": true,
+        "interval": 3000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 3000
+      }
+    },
+
+    {
+      "proto_name": "EVENT_INR_2",
+      "proto_pos": 2,
+      "priority": 20,
+      "event_group": "INR",
+      "event_type": "INR_2",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "inr_2",
+        "switch": true,
+        "interval": 3000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 3000
+      }
+    },
+
+    {
+      "proto_name": "EVENT_INR_3",
+      "proto_pos": 3,
+      "priority": 20,
+      "event_group": "INR",
+      "event_type": "INR_3",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "inr_3",
+        "switch": true,
+        "interval": 3000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 3000
+      }
+    },
+
+    {
+      "proto_name": "EVENT_INR_4",
+      "proto_pos": 4,
+      "priority": 20,
+      "event_group": "INR",
+      "event_type": "INR_4",
+      "pattern": 0,
+      "sound": {
+        "sound_name": "inr_4",
+        "switch": true,
+        "interval": 3000
+      },
+      "upload": {
+        "switch": true,
+        "interval": 3000
+      }
+    }
+  ]
+}

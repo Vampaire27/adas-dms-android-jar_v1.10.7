@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/transparent">
+
+    <include layout="@layout/view_calibration_toolbar" />
+
+    <FrameLayout
+        android:id="@+id/fl_target"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="130dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="40dp"
+        android:background="@color/blue_11"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/calibration_cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        android:translationZ="1dp" />
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="130dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/blue_7"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/calibration_next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        android:translationZ="1dp" />
+</RelativeLayout>
